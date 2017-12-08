@@ -52,11 +52,52 @@ body {
 .s1 .header img:nth-of-type(4){
     width: 50px;
     right: 50px;
-    bottom: 120px;
+    bottom: 190px;
 }
 .s1 .header img:nth-of-type(5){
     width: 70%;
     right: 50px;
     margin-right: 6px;
     bottom: 33%;
+}
+.main img:nth-of-type(1){
+    width: 44%;
+    position: absolute;
+    margin-left: 104px;
+    top: 218px;
+    display: block;
+}
+.main img:nth-of-type(2){
+    width: 86%;
+    position: absolute;
+    margin-left: 24px;
+    top: 274px;
+    display: block;
+}
+.main .img9{
+    background: url(../img/9.png);
+    background-size: cover;
+    width: 56%;
+    position: absolute;
+    top: 357px;
+    margin-left: 83px;
+    font-family: cursive;
+    font-weight: bold;
+    line-height: 23px;
+}
+.footer{
+    padding-top:125%;
+}
+.footer p{
+    color: #00f5b7;
+    font-weight:bold;
+}
+.footer img{
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+.footer img:nth-of-type(1){
+    left:14%;
 }
