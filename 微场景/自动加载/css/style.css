@@ -162,43 +162,25 @@ body {
     40%{left:18%;}
     80%{left:10%;}
 }
-.s2,.s3,.s4,.s5,.s6,.s7,.s8 {
+.s2{
     color: #00f5b7;
 }
 .s2 img{
     width: 90%;
 }
-.s2 h2::before,
-.s3 h2::before,
-.s4 h2::before,
-.s5 h2::before,
-.s6 h2::before,
-.s7 h2::before,
-.s8 h2::before{
+.s2 h2::before {
     background: url(../img/14.png);
     background-size: cover;
     left: 45px;
     top: 33px;
 }
-.s2 h2::after,
-.s3 h2::after,
-.s4 h2::after,
-.s5 h2::after,
-.s6 h2::after,
-.s7 h2::after,
-.s8 h2::after{
+.s2 h2::after {
     background: url(../img/13.png);
     background-size: cover;
     right: 45px;
     top: 33px;
 }
-.s2 h2::before, .s2 h2::after,
-.s3 h2::before, .s3 h2::after,
-.s4 h2::before, .s4 h2::after,
-.s5 h2::before, .s5 h2::after,
-.s6 h2::before, .s6 h2::after,
-.s7 h2::before, .s7 h2::after,
-.s8 h2::before, .s8 h2::after{
+.s2 h2::before, .s2 h2::after {
     content: "";
     width: 83px;
     height: 20px;
@@ -235,131 +217,4 @@ body {
     line-height: 30px;
     border-radius: 20px;
     font-weight: bold;
-}
-.s3 .main .pic1 img,
-.s3 .main .pic2 img,
-.s3 .main .pic3 img,
-.s3 .main .pic5 img,
-.s3 .main .pic6 img,
-.s3 .main .pic7 img{
-    width: 50%;
-    animation: rubberBand infinite;
-}
-.s3 .main .pic1{
-     left: 20%;
-     top: 23%;
-    position: absolute;
- }
-.s3 .main .pic2{
-    right: 20%;
-    top: 23%;
-    position: absolute;
-}
-.s3 .main .pic3{
-    left: 2%;
-    top: 40%;
-    position: absolute;
-}
-.s3 .main .pic4{
-    margin-top: 37%;
-}
-.s3 .main .pic4 img{
-    animation: pulse infinite;
-}
-.s3 .main .pic5{
-    right: 2%;
-    top: 40%;
-    position: absolute;
-}
-.s3 .main .pic6{
-    left: 20%;
-    top: 60%;
-    position: absolute;
-}
-.s3 .main .pic7{
-    right: 20%;
-    top: 60%;
-    position: absolute;
-}
-.s3 .main p{
-    margin-top: -46px;
-}
-.s3 .main .pic4 p{
-    margin-top: -81px;
-    font-weight: bold;
-    font-family: 黑体;
-    font-size: 27px;
-}
-.s3 .main .text p:nth-of-type(1){
-    margin-top: 53%;
-}
-.s3 .main .text p:nth-of-type(2){
-    margin-top: 0;
-}
-.s4 .main{
-    background: url("../img/16.png");
-    background-size: cover;
-    width: 94%;
-    margin-left: 12px;
-}
-.s4 .main .tit h3{
-    display: inline-block;
-}
-.s4 .main .tit h3 img{
-    width: 23%;
-    display: inline-block;
-}
-.s4 .main .tit h3 span{
-    display: inline-block;
-}
-.s4 .main .main-container{
-    text-align: left;
-    padding-left: 15px;
-}
-.s4 .main .span1{
-    width: 15px;
-    height: 15px;
-    background: url("../img/19.png");
-    background-size: cover;
-    display: inline-block;
-    margin-right: 8px;
-}
-.s4 .main-container p{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.s4 .main-container .pin1,.s4 .main-container .pin2{
-    margin-bottom: 15px;
-}
-.s4 .main-container .pin1 .p2 img{
-    height: 10px;
-    width: 82%;
-}
-.s4 .main-container .pin1 .p3 img{
-    height: 10px;
-    width: 41%;
-}
-.s4 .main-container .pin2 .p2 img{
-    height: 10px;
-    width: 75%;
-}
-.s4 .main-container .pin2 .p3 img{
-    height: 10px;
-    width: 39%;
-}
-.s4 .main-container .pin3 .p2 img{
-    height: 10px;
-    width: 72%;
-}
-.s4 .main-container .pin3 .p3 img{
-    height: 10px;
-    width: 36%;
-}
-.s4 .main-container .p2 span,.s4 .main-container .p3 span{
-    display: inline-block;
-}
-.s4 .main-container .main-text{
-    text-align: center;
-    padding-top: 11%;
-    padding-bottom: 12%;
 }
