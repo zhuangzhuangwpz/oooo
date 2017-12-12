@@ -30,6 +30,33 @@ body {
     right:47%;
     transform: rotateZ(-90deg);
 }
+/*音乐*/
+#mp3btn {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    z-index: 100;
+    width: 25px;
+    height: 25px;
+    background: rgba(0, 0, 0, 0.54);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    border: 3px solid rgba(76, 76, 76, 0.62);
+    transform: rotateZ(0deg);
+    animation: mp3btnkey 2.5s linear infinite;
+}
+@keyframes mp3btnkey {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+#mp3btn img {
+    width: 10px;
+}
 /*s1星球*/
 .s1 .header img{
     position: absolute;
