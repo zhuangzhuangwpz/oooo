@@ -242,42 +242,45 @@ body {
 .s3 .main .pic5 img,
 .s3 .main .pic6 img,
 .s3 .main .pic7 img{
-    width: 50%;
+    width: 22%;
     animation: rubberBand infinite;
 }
 .s3 .main .pic1{
-     left: 20%;
+     left: 0%;
      top: 23%;
     position: absolute;
  }
 .s3 .main .pic2{
-    right: 20%;
+    right: 0%;
     top: 23%;
     position: absolute;
 }
 .s3 .main .pic3{
-    left: 2%;
+    left: -19%;
     top: 40%;
     position: absolute;
 }
 .s3 .main .pic4{
     margin-top: 37%;
+    margin-left: 33%;
+    width: 34%;
 }
 .s3 .main .pic4 img{
     animation: pulse infinite;
+    width: 100%;
 }
 .s3 .main .pic5{
-    right: 2%;
+    right: -19%;
     top: 40%;
     position: absolute;
 }
 .s3 .main .pic6{
-    left: 20%;
+    left: 0%;
     top: 60%;
     position: absolute;
 }
 .s3 .main .pic7{
-    right: 20%;
+    right: 0%;
     top: 60%;
     position: absolute;
 }
@@ -362,4 +365,70 @@ body {
     text-align: center;
     padding-top: 11%;
     padding-bottom: 12%;
+}
+.s5 .main div{
+    background: url("../img/26.png");
+    background-size: cover;
+    width: 40%;
+    position: absolute;
+    padding-bottom: 6px;
+}
+.s5 .main div:nth-of-type(1){
+    left:9%;
+}
+.s5 .main div:nth-of-type(2){
+    right:9%;
+}
+.s5 .main div:nth-of-type(3){
+    left:9%;
+    bottom:24%
+}
+.s5 .main div:nth-of-type(4){
+    right:9%;
+    bottom:24%
+}
+.s5 .main div img{
+    width: 92%;
+    animation: pulse infinite;
+}
+.s5 .main div p{
+    margin-top:3px;
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+.s6 .main{
+    border-left: 1px #00f5b7 dashed;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+    padding-left: 5%;
+}
+.s6 .main .pix3-p{
+    background: url(../img/27.png);
+    background-size: cover;
+    color: #000;
+    padding-left: 10px;
+    line-height: 30px;
+    display: inline-block;
+    width: 80%;
+    margin-bottom: 0;
+}
+.s6 .main span{
+    background: url(../img/17.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 42px;
+    display: inline-block;
+    height: 34px;
+    margin-left: -40px;
+}
+.s6 .main .main-text{
+    background: url(../img/28.png);
+    background-size: cover;
+    font-size: 14px;
+}
+.s6 .main .main-text p{
+    margin-top: 0px;
+    margin-bottom: 14px;
 }
