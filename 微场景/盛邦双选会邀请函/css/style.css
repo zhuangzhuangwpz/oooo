@@ -1,0 +1,228 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+/*音乐*/
+#mp3btn {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    z-index: 100;
+    width: 25px;
+    height: 25px;
+    background: rgba(0, 0, 0, 0.54);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    border: 3px solid rgba(76, 76, 76, 0.62);
+    transform: rotateZ(0deg);
+    animation: mp3btnkey 2.5s linear infinite;
+}
+@keyframes mp3btnkey {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+#mp3btn img {
+    width: 10px;
+}
+/*通用边框*/
+.main_broder img:nth-of-type(1){
+    z-index: 100;
+    width: 93%;
+    top: 6%;
+    left: 3%;
+    right: 3%;
+    position: absolute;
+}
+.main_broder img:nth-of-type(2){
+     z-index: 100;
+     width: 85%;
+     top: 8.5%;
+     left: 7%;
+     right: 7%;
+     position: absolute;
+ }
+.main_broder img:nth-of-type(3){
+    z-index: 100;
+    width: 100%;
+    top: -9.5%;
+    right: -30%;
+    position: absolute;
+}
+.main_broder img:nth-of-type(4){
+    z-index: 100;
+    width: 100%;
+    bottom: -2.5%;
+    left: -30%;
+    position: absolute;
+}
+.main_broder img:nth-of-type(5){
+    z-index: 100;
+    width: 100%;
+    top: -23%;
+    left: -43%;
+    position: absolute;
+}
+.main_broder img:nth-of-type(6){
+    z-index: 100;
+    width: 100%;
+    bottom: -23%;
+    right: -43%;
+    position: absolute;
+}
+/*通用低花*/
+.main_broder img:nth-of-type(7){
+    width: 100%;
+    bottom: -23%;
+    z-index: 0;
+    position: absolute;
+}
+/*s1样式*/
+.s1 .s1-bg{
+    position: absolute;
+    bottom: -28%;
+    left: -10%;
+    z-index: -100;
+}
+.s1 .main_tit{
+    margin-top: 44%;
+}
+.s1 .main_tit .main_tit_bg{
+    text-align: center;
+}
+.s1 .main_tit .main_tit_bg1{
+    display: inline-block;
+    background: url("../img/3_1.jpg!5");
+    background-size: cover;
+    width: 255px;
+    height: 255px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.s1 .main_tit .main_tit_bg2{
+    display: inline-block;
+    background: url("../img/3_2.jpg!5");
+    background-size: cover;
+    width: 240px;
+    height: 240px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.s1 .main_tit .main_tit_bg3{
+    display: inline-block;
+    background: url(../img/3_3.jpg!4);
+    background-size: cover;
+    width: 225px;
+    height: 225px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+ }
+.s1 .main_tit .main_tit_bg4{
+    display: inline-block;
+    background: url(../img/3_4.jpg!4);
+    background-size: cover;
+    width: 210px;
+    height: 210px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.s1 .main_tit .main_tit_bg4 .p1{
+    font-size: 35px;
+    writing-mode: horizontal-tb;
+    color: rgb(43, 185, 197);
+    opacity: 1;
+    transform: rotateZ(0deg);
+    border-width: 0px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 0px;
+    margin: 5px 0;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px;
+    font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1;
+    padding-top: 18px;
+    text-align: center;
+}
+.s1 .main_tit .main_tit_bg4 .p2{
+    font-size: 63px;
+    writing-mode: horizontal-tb;
+    color: rgb(43, 185, 197);
+    opacity: 1;
+    transform: rotateZ(0deg);
+    border-width: 0px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 0px;
+    margin: 5px 0;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px;
+    font-family: 宋体;
+    line-height: 1;
+    text-align: center;
+}
+.s1 .main_tit .main_tit_bg4 .p3,
+.s1 .main_tit .main_tit_bg4 .p4{
+    color: rgb(0, 118, 197);
+    font-family: 黑体;
+    font-size: 16px;
+    font-weight: bold;
+}
+/*s2通用样式*/
+.s2 .s2-bg{
+    width: 100%;
+    padding-top: 13%;
+}
+.s2 .main_tit{
+    position: absolute;
+    top: 6%;
+    left: 18%;
+    right: 18%;
+    z-index: 100;
+}
+.s2 .main_tit p{
+    background: url(../img/tit_bg.jpg!4);
+    background-size: cover;
+    width: 233px;
+    font-size: 20px;
+    line-height: 29px;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+.s2 .main_container{
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    color: #fff;
+    top: 13%;
+    text-align: center;
+}
+.s2 .main_container p{
+    line-height:26px;
+}
+.s2 .main_container img{
+    width: 95%;
+    display: inline-block;
+}
