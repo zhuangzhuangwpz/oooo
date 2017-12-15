@@ -98,6 +98,50 @@ body {
     z-index: 0;
     position: absolute;
 }
+/*通用样式*/
+.s-bg{
+    width: 100%;
+    padding-top: 13%;
+}
+.main_tit{
+    position: absolute;
+    top: 6%;
+    left: 18%;
+    right: 18%;
+    z-index: 100;
+    color: #fff;
+}
+.s2 .main_tit p,
+.s3 .main_tit p,
+.s4 .main_tit p,
+.s5 .main_tit p,
+.s6 .main_tit p,
+.s7 .main_tit p{
+    background: url(../img/tit_bg.jpg!4);
+    background-size: cover;
+    width: 233px;
+    font-size: 20px;
+    line-height: 29px;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+.main_container{
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    color: #fff;
+    top: 13%;
+    text-align: center;
+}
+.clearfix:before,
+.clearfix:after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+/*通用样式*/
 /*s1样式*/
 .s1 .s1-bg{
     position: absolute;
@@ -189,40 +233,96 @@ body {
     font-weight: bold;
 }
 /*s2通用样式*/
-.s2 .s2-bg{
-    width: 100%;
-    padding-top: 13%;
-}
-.s2 .main_tit{
-    position: absolute;
-    top: 6%;
-    left: 18%;
-    right: 18%;
-    z-index: 100;
-}
-.s2 .main_tit p{
-    background: url(../img/tit_bg.jpg!4);
-    background-size: cover;
-    width: 233px;
-    font-size: 20px;
-    line-height: 29px;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-}
-.s2 .main_container{
-    width: 70%;
-    position: absolute;
-    left: 15%;
-    right: 15%;
-    color: #fff;
-    top: 13%;
-    text-align: center;
-}
 .s2 .main_container p{
     line-height:26px;
 }
 .s2 .main_container img{
     width: 95%;
     display: inline-block;
+}
+/*s3通用样式*/
+.s3 .main_container p:nth-of-type(1){
+    line-height:26px;
+    border-bottom: 2px #0152a3 solid;
+    text-align: left;
+}
+.s3 .main_container p:nth-of-type(2){
+    line-height:26px;
+    text-align: center;
+}
+/*s4通用样式*/
+.s4 .main_container p{
+    background: #0152a3;
+    width: 100%;
+    line-height: 29px;
+    font-size: 16px;
+    font-family: 黑体;
+    border-radius: 20px;
+    box-shadow: 0px 0px 17px #066fd8;
+    margin-bottom: 9%;
+}
+/*s5通用样式*/
+.s5 .main_container p{
+    width: 70%;
+    margin: 0 auto;
+    line-height: 400%;
+}
+.s5 .main_container span:nth-of-type(1){
+    float: left;
+}
+.s5 .main_container span:nth-of-type(2){
+    float: right;
+}
+.s5 .main_container .boundary{
+    width: 3px;
+    margin:0 auto;
+    background: #066fd8;
+    height: 335px;
+    position: relative;
+    margin: -268px auto;
+}
+.s5 .main_container .boundary img{
+    position: absolute;
+    top: -71px;
+    left: -71px;
+}
+/*s6通用样式*/
+.s6 .main_container{
+    padding-top: 18%;
+}
+.s6 .main_container .f_formWrap{
+    color: #999999;
+    background-color: #ffffff;
+    border: 2px solid #00f3cb;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    margin-bottom: 5%;
+}
+.s6 .main_container .f_formWrap input{
+    height: 37px;
+    border: 0px;
+    outline: none;
+}
+.s6 .main_container .f_formWrap .required{
+    left: 4%;
+    top: 35%;
+    position: absolute;
+    color: red;
+}
+.s6 .main_container .f_formSubmit{
+    background-color: #00f3cb;
+    margin-top: .21rem;
+    text-align: center;
+    color: white;
+    font-size: .3rem;
+    width: 80%;
+    height: 37px;
+    margin-left: 11%;
+    margin-right: 11%;
+}
+.s6 .main_container .f_formSubmit span{
+    line-height: 39px;
+    font-size: 17px;
 }
