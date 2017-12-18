@@ -1,0 +1,166 @@
+﻿/*---通用样式---*/
+body,ul,li,p,h1,h2,h3{
+	padding:0px;
+	margin:0px;
+	}
+.warper{
+	background-attachment: fixed;
+	background: url(../images/tail-top.jpg);
+	width: 100%;
+}
+.header,.containt,.footer{
+	width:940px;
+	margin:0 auto;
+	}
+.clearfix:before,
+.clearfix:after{
+	content:" ";
+	display:table;
+	clear:both;
+	}
+.title1{
+	font-family: Arial;
+	font-size: 29px;
+	color: #fff;
+	margin-top: 70px;
+	margin-bottom: 15px;
+}
+/*---通用样式---*/
+/*---header样式---*/
+.logo,.nav{
+	float: left;
+}
+.logo p{
+	color: #7f7f7f;
+	font-family: Blackadder ITC;
+	font-size: 46px;
+	text-decoration: none;
+	margin-right: 50px;
+	margin-top: 15px;
+}
+.nav2 a{
+	color: #ffa703;
+}
+.nav li{
+	height: 80px;
+	font-family: Blackadder ITC;
+	font-size: 38px;
+	float: left;
+	list-style: none;
+	margin-left: 20px;
+	line-height: 300%;
+}
+.nav1 a,.nav3 a,.nav4 a,.nav5 a,.nav6 a{
+	color: #fff;
+	text-decoration: none;	
+}
+.nav a:hover{
+	color: #ffa703;
+}
+/*---header样式---*/
+/*---cotnaint样式---*/
+.sidber{
+	margin:10px 0px 10px 220px;
+}
+.sidber li{
+	font-family: Blackadder ITC;
+	font-size: 20px;
+	float: left;
+	list-style: none;
+	margin-left: 50px;
+	line-height: 300%;
+	background: url(../images/button-tail.png);
+	border-radius: 10px;
+}
+.sidber a{
+	color: #fff;
+	text-decoration: none;	
+	display: block;
+}
+.sidber a:hover{
+	color: #ffa703;
+}
+.banner-left,.banner-right{
+	float: left;
+}
+.banner-left{
+	width: 236px;
+	height: 334px;
+	padding: 5px 0px 0px 5px;
+}
+.banner-right{
+	width: 664px;
+	height: 334px;
+}
+.banner-left img{
+	box-shadow: 0 0 0 5px #fff;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+.banner-right{
+	padding: 5px 0px 0px 35px;	
+}
+.banner-right img{
+	box-shadow: 0 0 0 5px #fff;
+	border-radius: 5px;
+}
+.main-left,.main-meddlle,.main-right{
+	float: left;
+}
+.main-left{
+	width: 241px;
+	position: relative;
+}
+.main-left img{
+	position: absolute;
+	left: -40px;
+}
+.main-left li{
+	list-style:url(../images/list_03.gif); 
+	list-style-position: inside;
+	padding-bottom: 15px;
+}
+.p1{
+	color: #d7c523;
+	font-family: Arial;
+	font-size: 15px;
+	display: block;
+	line-height: 150%;
+}
+.p2{
+	color: #a6a6a6;
+	font-family: Arial;
+	font-size: 15px;
+	display: block;
+	line-height: 150%;
+}
+.p3{
+	color: #d7c523;
+	font-family: Arial;
+	font-size: 15px;
+	line-height: 150%;
+}
+.main-meddlle{
+	width: 364px;
+}
+.main-meddlle img{
+	float: left;
+}
+.main-right li{
+	list-style: url(../images/marker1.gif);
+	list-style-position: inside;
+	margin-bottom: 30px;
+}
+.main-right{
+	width: 335px;
+}
+/*---cotnaint样式---*/
+/*---footer样式---*/
+.footer-inner{
+	background: url(../images/tail-bottom.jpg);
+}
+.footer{
+	text-align: center;
+	height: 229px;
+}
+/*---footer样式---*/

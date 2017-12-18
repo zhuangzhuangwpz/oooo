@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+/*------通用样式------*/
+body,ul,li,h1,h2,h3,p,strong{
+	margin:0px;
+	padding:0px;
+	}
+.containt,.footer{
+	margin:0 auto;
+	width:930px;
+	}
+.clearfix:before,
+.clearfix:after{
+	content:" ";
+	display:table;
+	clear:both;
+	}
+.sidebar,.content{
+	float:left;
+	}
+	
+.nav{
+	list-style:none;
+	}/*--去除列表项符号--*/
+/*------通用样式------*/
+/*--header的样式--*/
+.banner{
+	width:758px;
+	height:109px;
+	background:url(../images/banner_03.jpg);
+	}
+.containt-inner{
+	width:100%;
+	background:url(../images/bg.gif);
+	}
+h2{
+	font:20px "Arial Black", Gadget, sans-serif;
+	color:#5e0e55;
+	padding:10px 0px 1px 0px;}
+.content p{
+	font:21px Georgia, "Times New Roman", Times, serif;
+	color:#7f5350;
+	line-height:189.4736842%;
+	margin:0px 0px 18px 0px;
+	}
+.sidebar,.ul li{
+	font:21px Georgia, "Times New Roman", Times, serif;
+	color:#e2ad61;
+	line-height:144.61538461%
+	}
+/*--header的样式--*/
+/*--main的样式--*/
+.main{
+	padding-top:40px;
+	}
+.sidebar{
+	width:194px;
+	padding:0px 54px 0px 0px;
+		}
+.content{
+	width:506px;}
+.tas{
+	font-family:19px "Times New Roman", Times, serif;
+	line-height:100%;
+	padding:60px 0px 0px 0px;
+	}
+/*--main的样式--*/
+

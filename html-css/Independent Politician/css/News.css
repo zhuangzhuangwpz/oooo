@@ -1,0 +1,234 @@
+/*------通用样式---------*/
+body,p,ul,li,h1,h2,h3{
+	margin: 0px;
+	padding: 0px;
+}
+.clearfix:before,
+.clearfix:after{
+	content:" ";
+	display:table;
+	clear: both;
+}
+.warper{
+	width: 100%;
+}
+.header-inner,.containt,.footer-inner{
+	width: 100%;
+}
+.header,.banner,.main-top,.main-middle,.main-bottom,.footer{
+	margin: 0px auto;
+	width: 940px;
+}
+/*------通用样式---------*/
+/*------header样式---------*/
+.header-inner{
+	background: url(../images/header-inner-bg_02.jpg);
+	height: 78px;
+}
+.nav li{
+	float: left;
+	width: 140px;
+	text-align: center;
+	font-family: Aparajita;
+	font-size: 24px;
+	line-height: 325%;
+	list-style: none;
+}
+.nav a{
+	color: #fff;
+	text-decoration: none;
+}
+.nav3{
+	background: url(../images/nav-bg_04.jpg);
+	width: 139px;
+	height: 78px;
+}
+.nav1{
+	border-left: 1px #360002 solid;
+	border-right: 1px #360002 solid;
+}
+.nav2,.nav3,.nav4,.nav5{
+	border-right: 1px #360002 solid;									
+}
+.nav a:hover{
+	display: block;
+	background: url(../images/nav-bg_04.jpg);
+	width: 139px;
+	height: 78px;
+}
+/*------header样式---------*/
+/*------banner样式---------*/
+.banner{
+	background: url(../images/bg_flag_02.png);
+	width: 1000px;
+	height:290px;
+	position: relative;
+}
+/*------banner样式---------*/
+/*------containt样式---------*/
+.containt{
+	background: url(../images/bg_bot.jpg);
+	height: 1100px;
+	z-index: -5;
+}
+.main{
+	position: absolute;
+	height: 1000px;
+	margin: 0 auto;
+	padding-top: 68px;
+	top: 0px;
+	left: 30px;
+	position: relative;
+}
+/*------containt样式---------*/
+/*------main-top样式---------*/
+.title{
+	font-family: Aparajita;
+	font-size: 58px;
+	color: #fff;
+	margin-left: 52px;
+}
+/*------main-top样式---------*/
+/*------main-middle样式---------*/
+.main-middle{
+	height: 400px;
+	margin-top: 51px;
+	background: #fff;
+	width: 910px;
+	padding-left: 30px;
+	margin: 5px;
+	border-radius: 25px;
+}
+.main-middle-p{
+	font-family: Aparajita;
+	font-size: 36px;
+	color: #9a0822;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.page{
+	width: 570px;
+	height: 91px;
+	font-family: Arial;
+	font-size: 13px;
+	color: #540085;
+	line-height: 170%;
+	list-style: none;
+}
+.page img{
+	float: left;
+	margin-right: 20px;
+}
+.bg{
+	background: url(../images/bg_img2.png);
+	width: 262px;
+	height: 397px;
+	position: absolute;
+	left: 652px;
+	top: -70px;
+}
+.main-middle-p1{
+	width: 890px;
+	font-family: Arial;
+	font-size: 13px;
+	line-height: 170%;
+	padding-top: 28px;
+	margin-bottom: 30px;	
+}
+.main-middle-left-p1{
+	font-family: Arial;
+	font-size: 13px;
+	color: #540085;
+	line-height: 170%;
+	font-weight: 600;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.main-middle-left-p2{
+	font-family: Arial;
+	font-size: 13px;
+	color: #540085;
+	line-height: 170%;
+}
+/*------main-middle样式---------*/
+/*------main-bottom样式---------*/
+.main-bottom{
+	width: 860px;
+	height: 406px;
+	margin-left: 50px;
+}
+.main-bottom-left,.main-bottom-right{
+	float: left;
+}
+.main-bottom-left{
+	width: 837px;
+	height: 402px;
+}
+.main-bottom-left-p1,.main-bottom-right-p1{
+	font-family: Aparajita;
+	font-size: 36px;
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.Overall img{
+	float: left;
+	margin-right: 20px;
+}
+.Overall-1,.Overall-2,.Overall-3{
+	padding-bottom: 37px;
+}
+.Overall-1-p1{
+	font-family: Arial;
+	font-size: 13px;
+	color: #fff;
+	line-height: 170%;
+	font-weight: 600;
+	}	
+.Overall-1-p2{
+	font-family: Arial;
+	font-size: 13px;
+	color: #fff;
+	line-height: 170%;
+}
+.main-bottom-right{
+	padding-left: 32px;
+}
+.main-bottom-right li{
+	list-style: url(../images/ster_07.gif);
+	list-style-position: inside;
+}
+.main-bottom-right a{
+	color: #fff;
+	font-family: Arial;
+	font-size: 13px;
+}
+.main-bottom-right-p2{
+	font-family: Arial;
+	font-size: 13px;
+	color: #fff;
+	line-height: 170%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/*------main-bottom样式---------*/
+/*------footer样式---------*/
+.footer-inner{
+	background: url(../images/bg_footer.jpg);
+	height: 90px;
+}
+.footer{
+	padding-top: 30px;
+}
+.footer a{
+	color: #fff;
+	font-family: Arial;
+	font-size: 13px;
+}
+.footer p{
+	text-align: center;
+	color:#a1accd;
+	font-family: Arial;
+	font-size: 13px;
+}
+/*------footer样式---------*/

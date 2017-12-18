@@ -1,0 +1,349 @@
+/*------通用样式---------*/
+body,p,ul,li,h1,h2,h3{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-size:1rem;  	/*---必须写----*/ 
+}
+.clearfix:before,
+.clearfix:after{
+	content:" ";
+	display:table;
+	clear: both;
+}
+.warper{
+	height: 1537px;
+	width: 100%;
+}
+.header,.banner,.containt,.footer{
+	margin: 0px auto;
+	width: 86.73647469%;
+}
+.logo,.nav li,.nav,.pic1,.pic2,.pic3,.main-left,.main-right,.copyright,.icon4,.icon3,.icon2,.icon1{
+	float: left;
+}
+.nav .btn1 a,.nav .btn2 a,.nav .btn3 a,.nav .btn4 a,.nav .btn5 a,.nav .btn6 a,.btn7 a{
+	text-decoration:none;    /*--取消a的下划线--*/
+	}
+.nav li,.containt-pic li,.footer-icon li{
+	list-style:none;
+	}
+/*------通用样式---------*/
+
+
+/*------header-inner样式---------*/
+.header-inner{
+	background-color: #000000;
+}
+.header{
+	padding:1.5625rem 0rem;
+}
+.logo{
+	width: 46.076438%;
+}
+.logo img{
+	width:100%;
+}
+.nav{
+	width: 45.271629%;
+	margin-left:6.53923541%;
+	padding-top: 2.6875rem;
+}
+.nav li{
+	line-height: 100%;
+}
+.nav li a{
+	font-size: 0.875rem;
+	font-family: Ebrima;
+	font-weight:bold;
+	letter-spacing:-1.5px;
+}
+.nav .btn1 a{
+	color:#c22000;
+}
+.nav .btn2 a,.nav .btn3 a,.nav .btn4 a,.nav .btn5 a,.nav .btn6 a{
+	color: #7f7f7f;
+}
+.nav li a:hover{
+	color:#c22000;			/*--鼠标经过的颜色--*/
+	display:block;  		/*--超链接变色--*/
+	}
+.nav .btn1,.nav .btn2,.nav .btn3,.nav .btn4,.nav .btn5{
+	margin-right:6.444444444%;
+}
+.nav .btn6{
+	margin-right: 5.33333333333%;
+}
+/*------header-inner样式---------*/
+
+
+/*------banner-inner样式---------*/
+.banner-inner{
+	background: url(../images/banner-inner_03.jpg);
+}
+.banner-text{
+	width: 59.2555%;
+	padding-left: 2.11755050%;
+}
+.banner-text h1{
+	font-size:1.875rem;
+	font-family:Lucida Bright;
+	color: #ffffff;
+	font-weight: 100;
+	margin-bottom: 1.9375rem;
+	padding-top:4.0625rem;
+}
+.banner-text p{
+	font-family: Kartika;
+	font-size: 0.875rem;
+	color: #7f7f7f;
+	line-height: 178.571428%;
+	font-weight: 600;
+}
+.banner-text a{
+	color:#c22800;
+}
+.banner{
+	position: relative; /*---参照单位--*/
+}
+.banner-pic{
+	width: 35.21126%;
+	position:absolute;/*---绝对位置---*/
+	left:65.192354129%;
+	top: -8.62060699%;
+}
+.banner-pic img{
+	width: 100%;	
+}
+.btn7{
+	width: 10.66398%;
+	height: 2.5625rem;
+	font-family: Vani;
+	font-size: 1.5rem;
+	color:#fdf7f5;
+	background-image:url(../images/预览图_03.gif);
+	margin-bottom:4.75rem;
+	margin-top: 1.625rem;
+	border: 0px;
+	border-radius:0.30181086rem;
+}
+/*------banner-inner样式---------*/
+
+
+/*------containt-inner样式---------*/
+.containt-inner{
+	background:url(../images/containt-inner_07.jpg);
+}
+.pic1{
+	padding-left: 2.11755050%;
+}
+.pic1,.pic2{
+	margin-right: 2.01207243%;
+}
+.pic1,.pic2,.pic3{
+	width: 30.1810865%;
+}
+.pic1 img,.pic2 img,.pic3 img{
+	width: 100%;
+}
+.containt-pic{
+	margin-top: 2.5rem;
+}
+/*------containt-inner样式---------*/
+
+
+/*------main样式---------*/
+.top-pic{
+	width:9.98336106489185%;
+	height: 200px;
+	margin-top: 1.375rem;
+	margin-right: 3.49417637271215%;
+}
+.top-pic img{
+	width: 100%;
+}
+.NextEvent-top h1{
+	margin-top: 3.25rem;
+	
+	font-size:1.875rem;
+	font-family:Lucida Bright;
+	color: #ffffff;
+	font-weight: 100;
+}
+.NextEvent-top p{
+	width: 86.52246256239601%;
+	font-family: Kartika;
+	font-size: 0.875rem;
+	color: #7f7f7f;
+	font-weight: 600;
+	line-height: 178.571428%;
+	margin-top: 1.8125rem;
+}
+.top-pic,.NextEvent-top p{
+	float: left;
+}
+.NextEvent-top-text{
+	margin-top: 1.3125rem;
+	width: 52.31388329979879%;
+}
+.btn8{
+	width: 15.66398%;
+	height: 2.5625rem;
+	font-family: Vani;
+	font-size: 1.5rem;
+	color:#fdf7f5;
+	background-image:url(../images/预览图_03.gif);
+	border: 0px;
+	border-radius:0.30181086rem;
+}
+.btn9{
+	clear: left;
+	margin-left: 12.14889336016097%;
+	padding-top: 1.625rem;
+}
+.NextEvent-top{
+	margin-left:2.11755050%;
+	border-bottom: 1px #000000 solid;
+	width: 86.52246256239601%;
+	padding-bottom: 2rem;
+}
+.NextEvent-bottom{
+	margin-left:2.11755050%;
+	width: 86.52246256239601%;
+	margin-top:1.9375rem;
+}
+.main{ 
+	clear: left;
+}
+.main-left{
+	width:  60.46277665995976%;
+}
+.bottom-pic1{
+	width:9.69305331179321%;
+	margin-right: 3.49417637271215%;
+}
+.bottom-pic1 img{
+	width:100%;
+}
+.bottom-pic2{
+	width: 35.54119547657512%;
+	margin-right: 3.06946688206785%;
+	padding-bottom: 1.625rem;
+}
+.bottom-pic2 img{
+	width: 100%;
+}
+.bottom-text{
+	width: 48.1421647819063%;
+	margin-top: 0.4375rem;
+}
+.bottom-pic1,.bottom-pic2,.bottom-text{
+	float: left;
+}
+.bottom-text{
+    font-family: Kartika;
+    font-size: 0.875rem;
+    color: #7f7f7f;
+    font-weight: 600;
+    line-height: 178.571428%;
+}
+.btn10{
+	margin-left: 13.14889336016097%;
+	height: 2.5625rem;
+}
+.btn11{
+    height: 2.5625rem;
+    font-family: Vani;
+    font-size: 1.5rem;
+    color: #fdf7f5;
+    background-image: url(../images/预览图_03.gif);
+    border: 0px;
+    border-radius: 0.30181086rem;
+    margin-top: 3.875rem;
+}
+.main-right{
+	width: 22.84778%;
+	margin-top: 2.5rem;
+}
+.OurAdventures h1{
+	width: 100%;
+	height: 3rem;
+	padding-left: 7.3333333%;
+	color: #ffffff;
+	background-color: #101111;
+	font-size: 1.875rem;
+    font-family:Sylfaen;
+    font-weight: 100;
+}
+.OurAdventures li{
+	font-family: Kartika;
+    font-size: 0.875rem;
+    color: #ffffff;
+    height: 2.25rem;
+    line-height: 2.5rem;
+    list-style: url(../images/预览图11_03.gif);
+    border-bottom: 1px #000000 solid;
+}
+.Our1{
+	margin-top: 2rem;
+}
+.meetings{
+	background-color: #0e0e0e;
+	margin-top: 2.375rem;
+}
+.meetings h1{
+	font-family: Mongolian Baiti;
+	font-size: 1.25rem;
+	color: #ffffff;
+	padding-top: 1.25rem;
+	padding-left: 8%;
+}
+.meetings img{
+	width: 100%;
+	padding-left: 8%;
+}
+.meetings-pic{
+	width:86.66666666666667%;
+}
+.meetings-text1{
+	font-family: Kartika;
+    font-size: 0.875rem;
+    color: #ffffff;
+    padding-left: 8%;
+}
+.meetings-text2{
+	font-family: Kartika;
+    font-size: 0.875rem;
+    color: #7f7f7f;
+    line-height: 178.571428%;
+    padding-left: 8%;
+    padding-bottom: 1.1875rem;
+}
+/*------main样式---------*/
+
+/*------footer-inner样式---------*/
+.footer-inner{
+	background: url(../images/footer-inner_11.jpg);
+}
+.copyright{
+	font-family: Kartika;
+    font-size: 0.875rem;
+    color: #7f7f7f;
+    line-height: 178.571428%;
+    font-weight: 600;
+    width: 27.108433%;
+    margin-left: 17.4698795%;
+    margin-top: 2.3125rem;
+}
+.icon1{
+	margin-left: 28.068410%;
+}
+.footer-icon{
+	margin-top: 3.0625rem;
+	margin-bottom: 4.6875rem;
+}
+.icon1,.icon2,.icon3{
+	margin-right: 1.6096579%;
+}
+/*------footer-inner样式---------*/

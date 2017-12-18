@@ -1,0 +1,264 @@
+@charset "utf-8";
+/*----通用样式---*/
+body,p,ul,li,h1,h2,h3{
+	padding:0px;
+	margin:0px;
+	}
+.clearfix:before,
+.clearfix:after{
+	content:" ";
+	display:table;
+	clear:both;
+	}
+.warger{
+	width:994px;
+	background:url(images/1page-header-bg.jpg) no-repeat;
+	margin:0px auto;
+	}
+/*----通用样式---*/
+/*----header样式---*/
+.header{
+	margin-bottom:61px;
+	}
+.logo,.login{
+	float:left;
+	}
+.logo{
+	padding-top:20px;
+	margin-right:110px;
+	margin-left:68px;
+	}
+.login{
+	margin-top:42px;
+	}
+.login li{
+	list-style:none;
+	float:left;
+	}
+.login-btn2{
+	text-align:center;
+	width:63px;
+	height:17px;
+	border-right:1px #cccccc dashed;
+	border-left:1px #cccccc dashed;
+	}
+.login-btn1,.login-btn3{
+	width:38px;
+	}
+.login-btn3{
+	text-align:right;
+	}
+
+/*----header样式---*/
+/*----containt样式---*/
+
+.nav li{
+	margin-left:20px;
+	padding-left:50px;
+	font:18px "Trebuchet MS";
+	width:195px;
+	list-style:none;
+	height:30px;
+	line-height:166.66666667%;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	}
+.nav-btn{
+	background:#62d7f1;
+	}
+.nav a{
+	text-decoration:none;
+	color:#FFF;
+	}
+.nav a:hover li{
+	background:#62d7f1;
+	}
+.nav{
+	float:left;
+	}
+/*----以上为nav样式---*/
+.banner{
+	float:left;
+	font-family:"Trebuchet MS";
+	padding-top:23px;
+	padding-left:86px;
+	margin-bottom:122px;
+	}
+.banner h1{
+	color:#ffffff;
+	font-size:36px;
+	}
+.banner p{
+	color:#c4f5ff;
+	font-size:24px;
+	padding-left:51px;
+	}
+/*----以上为banner样式---*/
+.containt{
+	padding-left:70px;
+	}
+.main-left,.main-right{
+	float:left;
+	}
+.main-left{
+	width:548px;
+	margin-right:56px;
+	}
+.main-left h1{
+	color:#09a1dd;
+	font-size:30px;
+	font-family:"Trebuchet MS";
+	letter-spacing:-2px;
+	margin-bottom:17px;
+	}
+.main-left p{
+	font-size:14px;
+	font-family:Vrinda;
+	line-height:135.7142857%;
+	letter-spacing:-0.5px;
+	}
+.jiacu{
+	font-weight:600;
+	}
+.main-left p a{
+	color:#09a1e2;
+	}
+.img{
+	padding-top:21px;
+	padding-bottom:10px;
+	}
+.img img{
+	margin-right:15px;
+	}
+.img p{
+	padding-top:11px;
+	font-size:14px;
+	font-family:Vrinda;
+	line-height:140%;
+	letter-spacing:-0.5px;
+	}
+/*----以上为main-left样式---*/
+.main-right{
+	padding-top:37px;
+	}
+.top,.bottom{
+	width:254px;
+	height:105px;
+	border:#FFF 3px solid;
+	border-radius:10px;
+	box-shadow:0 0 0 1px #CCCCCC;
+	}
+.top{
+	background:url(images/top_bg_03.gif);
+	margin-bottom:14px;
+	}
+.top img,.bottom img{
+	margin-top:10px;
+	margin-left:15px;
+	}
+.bottom{
+	background:url(images/bottom_06.gif);
+	}
+.right-img{
+	float:left;
+	}
+.main-right h1{
+	padding-top:20px;
+	padding-left:107px;
+	font-size:24px;
+	color:#FFFFFF;
+	font-family:"Trebuchet MS";
+	}
+.main-right p{
+	padding-left:107px;
+	font-size:18px;
+	color:#FFFFFF;
+	font-family:"Trebuchet MS";
+	}
+.main{
+	margin-bottom:49px;
+	}
+/*----以上为main-right样式---*/
+/*----以上为main样式---*/
+.sidebar h1{
+	color:#0aa1dd;
+	font-size:30px;
+	font-family:Vrinda;
+	padding-bottom:25px;
+	}
+.sidebar-one,.sidebar-two,.sidebar-three{
+	float:left;
+	width:235px;
+	height:202px;
+	padding-top:26px;
+	padding-left:26px;
+	background:url(images/sidebar_btn_03.gif);
+	border:3px #FFFFFF solid;
+	border-radius:10px;
+	box-shadow:0 0 0 1px #CCCCCC;
+	}
+.sidebar-one h1,.sidebar-two h1,.sidebar-three h1{
+	font-family:Vrinda;
+	font-size:24px;
+	color:#000;
+	letter-spacing:-1px;
+	padding-bottom:15px;
+	}
+.sidebar-two{
+	margin:0px 30px;
+	}
+.sidebar p{
+	width:185px;
+	font-size:14px;
+	letter-spacing:0.5px;
+	font-family:Calibri;
+	line-height:135.7142857%;
+	}
+.sidebar a{
+	color:#09a1e2;
+	}
+.sidebar-btn{
+	margin-top:18px;
+	text-align:center;
+	width:110px;
+	height:34px;
+	font-family:Calibri;
+	line-height:242.857142857%;
+	border:2px #FFFFFF solid;
+	border-radius:10px;
+	box-shadow:0 0 0 1px #CCCCCC;
+	background:url(images/sidebar_btn_bg_06.gif);
+	float:left;
+	}
+.sidebar-btn a{
+	color:#FFF;
+	text-decoration:none;
+	}
+.sidebar-img1{
+	margin-left:153px;
+	}
+.containt{
+	padding-bottom:204px;
+	}
+/*----以上为sidebar样式---*/
+/*----containt样式---*/
+/*----footer样式---*/
+.footer{
+	background:url(images/footer_bg_21.gif);
+	height:62px;
+	border-radius:20px 20px 0px 0px;
+	border-top:solid 10px #f2f2f2;
+	padding-top:32px;
+	}
+.footer p{
+	text-align:center;
+	color:#444c4c;
+	font-size:14px;
+	line-height:135.71452857%;
+	font-family:"Simplified Arabic";
+	font-weight:500;
+	}
+.footer a{
+	color:#fffffe;
+	}
+/*----footer样式---*/

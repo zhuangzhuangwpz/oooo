@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+/*------通用样式------*/
+body,ul,li,h1,h2,h3,p{
+	margin:0px;
+	padding:0px;
+	}
+.containt,.footer-center{
+	margin:0 auto;
+	width:982px;
+	}
+.clearfix:before,
+.clearfix:after{
+	content:" ";
+	display:table;
+	clear:both;
+	}
+.logo,.nav,.nav li{
+	float:left;
+	}
+	
+.nav{
+	list-style:none;
+	}/*--去除列表项符号--*/
+p{
+	color:#15221b;
+	font:14px Arial, Helvetica, sans-serif;
+	line-height:171.4285714%;
+	}
+/*------通用样式------*/
+
+/*------headerd部分的样式------*/
+.logo{
+	margin-left:22px;
+	margin-right:684px;
+	}
+.header{
+	padding:56px 0px 31px 0px;
+	}
+.nav3{
+	padding:0px 12px 0px 0px;
+	}
+.nav{
+	padding:8px 0px 7px 0px;}
+/*------headerd部分的样式------*/
+
+/*------main部分的样式------*/
+.menu,.main-center,.sidebar,.sidebar li{
+	float:left;
+	}
+.menu{
+	margin-left:22px;
+	margin-right:110px;
+	list-style:none;
+	}
+.menu-text{
+	padding:30px 0px 12px 0px;
+	}
+.main-center{
+	width:570px;
+	}
+.ddy{
+	padding:14px 0px 25px 0px;
+	}
+.dld{
+	padding:35px 0px 17px 0px;
+	}
+.pps{
+	padding:39px 0px 18px 0px;
+	}
+.qsy{
+	padding:44px 0px 9px 0px;
+	}
+.ect{
+	padding:7px 0px 7px 0px;
+	}
+.sidebar{
+	list-style:none;
+	float:right
+	}
+.prev{
+	padding-right:6px;
+	}
+.home{
+	padding-right:9px;
+	}
+.ect_3li{
+	padding-bottom:60px;
+	}
+/*------main部分的样式------*/
+
+/*------contaiont-inner样式------*/
+.containt-inner{
+	width:100%;
+	background:url(../images/bg.gif);
+	}
+
+/*------contaiont-inner样式------*/
+
+/*------footer-inner样式------*/
+.footer{
+	width:100%;
+	background:url(../images/footer_bg.gif);
+	height:200px;
+	}
+.footer-center{
+	padding:37px 0px 27px 0px;
+	}
+.foot-inner{
+	padding:0px 684px 0px 22px;
+	}
+.bnav3{
+	padding:0px 9px 32px 0px;
+	}
+.foot-inner,.bnav,.bnav li{
+	float:left;
+	}
+.bnav li{
+	list-style:none;
+	}
+.msy{
+	padding:0px 0px 0px 22px;
+	}
+/*------footer-inner样式------*/
