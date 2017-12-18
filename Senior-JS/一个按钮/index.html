@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+    <button>按钮</button>
+    <p>asdf</p>
+	<script src='jquery03.js'></script>
+     <script>
+      $("button").aa(function(){
+      	var thisdom = $(this);
+      	console.log(thisdom.text());
+      });
+
+      $("p").aa(function(){
+          var thisdom = $(this);
+          console.log(thisdom.text());
+      });
+
+
+     </script>
+</body>
+</html>

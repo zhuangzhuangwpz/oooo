@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //js中只要函数中的变量都有作用域，if和for没有作用域，里面的变量都是全局变量//
+    //函数中变量前没有var的是全局变量
+
+    function fun1 () {
+        a=10;
+    };
+    console.log(a);
+    
+    if(2>1){
+        b=20;
+    };
+    console.log(b);
+    for(var i=0;i<5;i++){
+        c=30;
+    };
+    console.log(c);
+    </script>
+</body>
+</html>

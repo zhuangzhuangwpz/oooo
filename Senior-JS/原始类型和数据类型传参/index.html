@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>原始类型与引用类型传参</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var str="hello";
+      function fun1(s) {
+        s=str;
+        s="hello js";
+      }
+      fun1(str);
+      console.log(str);
+      var obj1={name:"小红"};
+      function fun2(obj) {
+        obj=obj1;
+        obj.name="小黑";
+      }
+      fun2(obj1);
+      console.log(obj1);
+      /*有对象的替换所有内容，没有的替换里面的值*/
+    </script>
+  </body>
+</html>

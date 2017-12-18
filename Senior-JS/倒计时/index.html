@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>倒计时</title>
+</head>
+<body>
+<h1></h1>
+<script>
+    //通过获取的毫秒数，将毫秒数变成天，时，分，秒
+    function changeTime(times){
+        //得到天数
+        var days=Math.floor(times/(1000*60*60*24));
+        console.log(days);
+        //通过求余得到除去天之后剩余的毫秒数
+        var hoursSheng=times%(1000*60*60*24);
+        //毫秒数除以1000*60*60，向下取整，获取整小数
+        var hours=Math.floor(hoursSheng/(1000*60*60));
+        console.log(hours);
+        //通过求余，得到除去时之后的总毫秒数
+        var mintuesSheng=hoursSheng%(1000*60*60);
+        //通过毫秒数除以1000*60，向下取整，获取分钟数
+        var minutes=Math.floor(mintuesSheng/(1000*60));
+        //通过求余获取得到除去分钟数之后的毫秒数
+        var secondsSheng=mintuesSheng%(1000/60);
+        //通过毫秒数除以1000，向下取整获得秒数
+        var seconds=Math.floor(secondsSheng/1000);
+        return{
+            day:days,
+            hour:hours,
+            minute:minutes,
+            second:seconds
+        }
+        //最后返回是一个对象，对象中有day，hour，minute，second几个属性（属性名随意写）
+    }
+    //得到目标时间和当前时间差值
+    function getCha(){
+        var target1=new Date("2017/09/16 20:00:00");
+        //在ie中不支持（2017—09-16这种格式）
+        var targetTime=target1.getTime();
+        /*通过gettime方法可以获取时间戳，时间戳是指格林威治时间1907年10月01时00分00秒（北京时间1970年01月01日08时00分00秒）起至现在的总毫秒数*/
+        var dateNow=new Date();
+        var dateNowTime=dateNow.getTime();
+        //通过changeIime方法获得一个包含天，时，分，秒的对象
+        var chaTime=changeTime(dateNowTime-targetTime);
+        console.log(dateNowTime-targetTime);
+        var hh=document.querySelector("h1");
+        hh.innerHTML="距离 2017-09-16  20:00:00  还有"+chaTime.day+"天"+chaTime.hour+":"+chaTime.minute+":"+chaTime.second;//通过对象获取属性值
+
+    }
+    getCha();//页面加载时先执行一次
+    setInterval(getCha,1000);//定时器，隔一秒执行一次getCha方法
+</script>
+</body>
+</html>

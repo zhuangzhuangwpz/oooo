@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+<span>点名</span>
+<button onclick="getName()">随机点名</button>
+<script>
+    var arr1=["小张","小白","小红","小亮","小王"];
+    var arr2= new Array();
+    //随机点名方法
+    function getName(){
+        var sp=document.querySelector("span");
+        if(arr2.length===arr1.length){
+            arr2.length=0;
+            sp.innerHTML="全部点完，请重新开始";
+        }else {
+            var randomNum=Math.floor(Math.random()*(arr1.length));
+            for(var i=0;i<arr2.length;i++){
+                if(arr2[i]===randomNum){
+                    getName();
+                    return;
+                }
+            }
+        }
+        sp.innerHTML=arr1[randomNum];
+        arr2.push(randomNum)
+    }
+</script>
+    <!-- JavaScript -->
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

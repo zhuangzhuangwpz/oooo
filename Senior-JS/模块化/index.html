@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>模块化</title>
+</head>
+<body>
+    <script>
+       /* var fun=(function () {
+                    var a=20;
+                    function fun1 () {
+                        var num2="小张";
+                        return num2;
+                    }
+                    return fun1;
+                })();
+                console.log(fun);*/
+        var module=(function(){
+            var num1=10;
+            var num2=20;
+            function fun1(){
+                console.log("hello fun1");
+            }
+            function fun2(){
+                console.log("hello fun2");
+            }
+            return {num:num1,fun:fun1};
+        })();
+        console.log(module.num);
+        module.fun();
+        consloe.log(num1);
+        /*函数名后加（）为执行，而数值后加（）执行为错误*/
+    </script>
+</body>
+</html>

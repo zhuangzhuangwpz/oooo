@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+</head>
+<body>
+<button></button>
+<script>
+    //var有变量提升的作用
+
+    //Es6定义变量用let
+    //let不能重复定义一个变量
+
+    var a=10;
+    var a=20;
+    let m=30;
+    console.log(m);
+if(true){
+    let n=2;
+}//let有快级作用域,里边定义的变量在外边无法访问
+
+    //定义常量用const,常量定义一次后不能被改变
+
+    const p=3.14;
+
+
+function fun3(x,y) {
+    var x=x||100;
+    var y=y||100;
+    return x+y;
+}//调用函数是忘记写参数，会执行默认值。这是es5的写法
+    function fun4(x=50,y=40) {
+        return x+y;
+    }//这是es6的写法。
+
+
+    //这是两种点击事件后边函数的写法，下面的是es6的新写法。括号里边写参数。
+    var btn=document.querySelector("button");
+    btn.onclick=function () {
+            console.log("hello world")
+    }
+
+    btn.onclick=()=>{
+        console.log("hello world");
+    }
+
+    var nn=(a,b)=>a+b;
+    console.log(nn(3,5));
+    var mm=(a,b)=>{
+    console.log("hello world"+a+b);
+    }
+    mm(5,8)
+
+
+
+
+</script>
+</body>
+</html>

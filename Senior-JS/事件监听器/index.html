@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+<button onclick="Say()">1</button>
+<button class="btn2">2</button>
+<button class="btn3">3</button>
+<script>
+    /*外联事件*/
+    function Say(){
+        alert("小张");
+    }
+    /*内联事件*/
+    var btn22=document.querySelector(".btn2");
+    btn22.onclick=function(){
+        alert("小迎")
+    }
+    /*监听器事件*/
+    var btn33=document.querySelector(".btn3");
+    btn33.addEventListener("click",function(){
+        alert("小雪")
+    })
+    btn33.addEventListener("click",function(){
+        alert("yingxue")
+    })
+</script>
+    <!-- JavaScript -->
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var student={name:"张三",age:23,mathScore:99,englishScore:90,friends:["lily","Lucy"]};
+    function clone(studs) {
+        var stu={};
+        for(var i in studs){
+            if(studs[i] instanceof Object){
+                stu[i]=clone(studs[i]);
+            }else {
+                stu[i]=studs[i];
+            }
+        }
+        return stu;
+    }
+    var stus=clone(student);
+    console.log(stus);
+    
+</script>
+</body>
+</html>

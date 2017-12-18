@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+<script>
+    function Cat(name){
+        this.name=name;
+        this.sayName=function(){
+            console.log("这只猫叫"+this.name)
+        }
+    }
+    function Animal(){
+        this.tatilNum=1;
+        this.sayName=function(){
+            console.log("这只动物有"+this.tatilNum+"条尾巴")
+        }
+    }
+
+    //把Animal的实例赋给Cat的原型对象，那么Cat就拥有了Animal的属性
+    Cat.prototype=new Animal();
+
+
+    var littleCat=new Cat("小黑");
+    littleCat.sayName();     //实例的方法先找自己的，找不到再找原型对象的
+    console.log(littleCat.tatilNum);
+</script>
+
+    <!-- JavaScript -->
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

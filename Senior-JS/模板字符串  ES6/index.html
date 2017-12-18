@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+<script>
+    //var 可以变量提升,ES6 定义变量用 let
+    // console.log(n);
+    // let n=10;
+
+    //let不能重复定义同一个变量
+    /* var m=1;
+     var m=2;
+     console.log(m);*/
+
+    //let 有块级作用域
+    /* if(true){
+     let n=2;
+     }
+     console.log(n);
+     */
+
+    //ES6  用const定义常量,常量不能被改变
+//    const PI = 3.14;
+//    PI = 2;
+//    console.log(PI);
+
+
+    //模板字符串用反引号``括起来的
+    var name="小白";
+    var age=2;
+    console.log("这只叫"+name+"今年"+age+"岁了");
+    console.log(`这只猫叫${name},今年${age}岁`);
+
+    var str1=`子枫戏谑的话语响起，让眼前所有人一愣，紧接着，双方还没有反应过来是怎么一回事，数百名手持警枪的警察就已经将所有人给围了起来，一个个子弹上膛，枪口对着众人，大有一副一言不合就直接开枪的架势。
+
+    突如其来的一幕，让樱花堂的人彻底的蒙了，相反的，毒龙帮的人却是一个个露出了得意的笑容，至少，他们在那警察的阵营之中看到了一个熟悉的身影，那就是他们的老大唐子枫；
+
+    “妈的，你们想干什么？想造反吗？”看到眼前的一幕，看到数百名警察围困着自己等人，豹哥大怒，眼前的数百名警察怕是整个龙城的警察都全部出动了吧？
+
+    “造反？究竟是谁造反？你们还有没有王法了？青天白日的在这里打架斗殴，你们想干什么？”子枫冷冷的话语呵斥道，带着一丝的戏谑。如果不是刚才忙着调动整个龙城的警员花费了一番时间，他早就到了。
+
+    “妈的，小子你什么东西？”看着子枫，豹哥愤怒的声音响起。`;
+
+    console.log(str1);
+
+
+
+    function fun1(){
+        var a=10;
+        return a;
+    }
+    var str2=`我工作${fun1()}年`;
+    console.log(str2)
+
+    
+</script>
+<!-- JavaScript -->
+<script src="js/main.min.js"></script>
+</body>
+
+</html>

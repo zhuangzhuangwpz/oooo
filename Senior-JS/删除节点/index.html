@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<style>
+    li{
+        list-style: none;
+    }
+</style>
+<body>
+<ul>
+    <li>苹果 删除</li>
+    <li>香蕉 删除</li>
+    <li>橘子 删除</li>
+    <li>葡萄 删除</li>
+</ul>
+<script>
+    var lis=document.querySelectorAll("li");
+    for(var i=0;i<lis.length;i++){
+        lis[i].index=i;
+        lis[i].onclick=function(){
+            var sc=lis[this.index].parentNode;
+            sc.removeChild(lis[this.index]);
+        }
+    }
+</script>
+    <!-- JavaScript -->
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <script>
+    /*案例1*/
+        var abc=function () {
+            var i=0;
+            function fun1 () {
+                return ++i;
+            }
+            return fun1;
+        }();
+        console.log(abc());
+        console.log(abc());
+        console.log(abc());
+
+        /*案例2*/
+        var a=function(){
+            var b=0;
+            function fun2(){
+                return ++b;
+            }
+            return fun2;
+        };
+        console.log(a()());
+        console.log(a()());
+        console.log(a()());
+
+ 
+        /*b包调用，如案例1，当abc变量定义完毕以先执行，fun1=function fun1();其中abc就已经作为变量保存，当其在console.log(abc())中执行只是在原有的基础上执行++i*/
+        /*案例2，在定义以后var a并没有执行所以没有可以进行存储的变量，每一次的执行console.log(a()()),都是先执行在存储，但是每次执行都没有在b包中存储所以变量值不会被保存，每次输出是结果都是一样的*/
+    </script>
+    </body>
+</html>

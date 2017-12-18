@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Cat(name,age){
+            this.name=name;
+            this.age=age;
+        }
+        Cat.prototype.headerNum=1;/*创建原型对象prototype*/
+        Cat.prototype.sayName=function(){/*创建原型对象prototype-方法*/
+            console.log("这只猫是"+this.name);
+        }
+        var letterCat1=new Cat("小黑",2);
+        console.log(letterCat1);
+        letterCat1.sayName();
+        console.log(letterCat1.headerNum);
+        var letterCat2=new Cat("小白",1);
+        console.log(letterCat2);
+    </script>
+</body>
+</html>

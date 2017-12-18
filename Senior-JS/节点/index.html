@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+<h1>标题</h1>
+<button>添加节点</button>
+<button class="btn2">删除节点</button>
+<h2>标题</h2>
+<button class="btn1">替换文本</button>
+<script>
+    /*createTextNode添加文本节点*/
+    var h11=document.querySelector("h1");
+    var btn=document.querySelector("button");
+    var tet=document.createTextNode("h1标题");
+    btn.onclick=function(){
+        h11.appendChild(tet);
+    };
+    /*替换文本节点*/
+    var h12=document.querySelector("h2");
+    var btn2=document.querySelector(".btn1");
+    var tet=document.createTextNode("h1标题");
+    btn2.onclick=function(){
+        h12.innerHTML=("tet");
+    };
+    /*删除节点*/
+    var btn13=document.querySelector(".btn2");
+    btn13.onclick=function(){
+        h11.removeChild(tet);
+    };
+</script>
+    <!-- JavaScript -->
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

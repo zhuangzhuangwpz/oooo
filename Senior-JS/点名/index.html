@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+<h1>开始</h1>
+<button>点名</button>
+<script>
+    /*依次点名*/
+    var Uname=["小明","小红","小张","小胖","小李","小王","小杨"];
+    var btn=document.querySelector("button");
+    var hh=document.querySelector("h1");
+    var i=0;
+    btn.onclick=function(){
+        hh.innerHTML=Uname[i];
+        i++;
+        if(i>7){
+            hh.innerHTML="点名结束，将重新开始"
+            i==0;
+        }
+    }
+</script>
+    <!-- JavaScript -->
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

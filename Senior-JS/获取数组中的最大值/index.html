@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var a=[[1,5,2,3,6,8,7],[12,15,16,45,12]];
+    var max=a[0][0];
+    for(var i=0;i<a.length;i++){
+        for(var j=0; j<a[i].length;j++){
+            if(a[i][j]>max){
+                max=a[i][j];
+            }
+        }
+    }
+    console.log(max);
+    var b=[[12,12,45,13,[212,524,35],33,45,16],[52,156,216,5,4,[4,5,25],31,654]];
+    var c= b.join(",");
+    var d= c.split(",");
+    var max=d[0];
+    for(var x=0;x<d.length;x++){
+        if(d[x]>max){
+            max=d[x];
+        }
+    }
+    console.log(Math.max.apply(null,d));/*Math.max.apply求一个数组的最大值(null,d)null为一个变量现在没用，d为数组*/
+</script>
+</body>
+</html>

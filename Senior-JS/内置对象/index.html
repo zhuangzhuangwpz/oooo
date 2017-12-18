@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p>当前时间为</p>
+<p><span class="sp1"></span></p>
+<script>
+    /*var pi=Math.PI;
+    var num1=Math.floor(pi);//向下取整
+    console.log(num1);
+    var num2=Math.ceil(pi);//向上取整
+    console.log(num2);
+    var num3=Math.round(pi);//四舍五入
+    console.log(num3);
+    var num4=Math.abs(-pi);//获取负数
+    var num5=Math.random();//获取0-1之间的随机树
+    var zhengshu=Math.random()*11+0;//random()*n+m;n为一共几个数，m为从几开始
+    console.log(Math.floor(zhengshu));*/
+
+    function show() {
+        var date=new Date();//
+        var hour=date.getHours();
+        var minute=date.getMinutes();
+        var seconds=date.getSeconds();
+        var sp1=document.querySelector(".sp1");
+        sp1.innerHTML=hour+":"+minute+"："+seconds;
+    }
+    setInterval(show,1000)
+</script>
+</body>
+</html>

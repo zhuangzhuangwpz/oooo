@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+<ul>
+    <li>
+        <span>苹果</span>
+        <span class="del"></span>
+    </li>
+</ul>
+<button class="btn1">添加</button>
+<button class="btn2">删除</button>
+<script>
+    var btn11=document.querySelector(".btn1");
+    var ul1=document.querySelector("ul");
+    btn11.onclick=function(){
+        var lis=document.createElement("li");
+        var spans=document.createElement("span");
+        var spanss=document.createElement("span");
+        spanss.setAttribute("class","del");
+        var tets=document.createTextNode("西瓜");
+        var tetss=document.createTextNode("删除");
+        spans.appendChild(tets);
+        spanss.appendChild(tetss);
+        lis.appendChild(spans);
+        lis.appendChild(spanss);
+        ul1.appendChild(lis);
+    }
+    var ul1=document.querySelector("ul");
+    ul1.addEventListener("click",function(event){
+        console.log(event);
+        var target =event.target;/*通过事件对象获取事件目标*/
+        if(target.className==="del"){
+            var parentli=target.parentNode;
+            var ulParent=parentli.parentNode;
+            ulParent.removeChild(parentli)
+        }
+    })
+</script>
+    <!-- JavaScript -->
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

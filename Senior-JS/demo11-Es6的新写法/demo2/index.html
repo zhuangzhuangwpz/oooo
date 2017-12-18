@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul>
+    <li>demo1</li>
+    <li>demo2</li>
+    <li>demo3</li>
+    <li>demo4</li>
+    <li>demo5</li>
+    <li>demo6</li>
+</ul>
+<script>
+    //解构赋值
+
+    let[num1,num2]=[5,10];
+    [num1,num2]=[num2,num1];
+    console.log(num1);
+    console.log(num2);
+
+    let {name,age}={name:"zhangtao",age:20}//对象的解构赋值
+    console.log(age);
+
+
+    var obj={name:"xiaoli",age:29};
+
+    function fun1({name,age}) {
+        console.log(age);
+    }
+
+
+fun1(obj);
+
+    var arr=document.querySelectorAll("li");
+
+    function fun2({length}) {
+        console.log(length);
+    }
+    fun2(arr);
+
+
+</script>
+</body>
+</html>

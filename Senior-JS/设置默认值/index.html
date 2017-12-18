@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<button class="btn1">an1</button>
+<button class="btn2">an2</button>
+<script>
+    function fun1(x,y){
+        var x=x||100;
+        var y=y||200;
+        return x+y;
+    }//调用函数忘记写参数，会执行默认值，只是Es5写法
+    console.log(fun1());
+
+    function fun2(x=50,y=80){
+        return x+y;
+    }//Es6写法
+    console.log(fun2());
+    var btn1=document.querySelector(".btn1");
+    var btn2=document.querySelector(".btn2");
+
+    btn1.onclick= function () {
+        console.log("btn1");
+    };
+    btn2.onclick=()=>{
+        console.log("btn2");
+    }
+    var nn=(a,b)=>a+b;
+    console.log(nn(3,2));
+</script>
+</body>
+</html>

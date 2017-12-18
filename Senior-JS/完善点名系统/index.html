@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>点名</title>
+    <link rel="stylesheet" href="bootstrap.css">
+	<style>
+	.changeTrue{
+			color: red;
+		}
+     .waiCont{
+     	width: 1000px;
+     	margin: 0 auto;
+     }
+     table{
+     	width: 1000px;
+     }
+     tbody tr{
+     	width: 150px;
+     	border-bottom: thick;
+     }
+    table{border-right:1px solid #CDCDC1;border-bottom:1px solid #CDCDC1} 
+    table thead th{border-left:1px solid #CDCDC1;border-top:1px solid #CDCDC1;padding-left: 10px;font-weight: bold;}
+    table td{border-left:1px solid #CDCDC1;border-top:1px solid #CDCDC1;padding-left: 10px;padding-top: 5px;} 
+	</style>
+</head>
+<body>
+    <div class="waiCont">
+	    <h1>名字</h1>
+		<button onclick="btnClick()">点名</button>
+		<button id="reset" onclick="reset()">重置</button>
+		<form action="">
+			<input id="txt" name="stuname" type="text">
+			<input id="insert" type="button"  onclick="insertStudent()" value="添加学生">
+		</form>
+		<table class="tab"> 
+			<thead>
+				<th>姓名</th>
+				<th>已点</th>
+				<th>删除</th>
+				<th>设置</th>
+			</thead>
+			<tbody class="tbody">
+				
+			</tbody>
+		</table>
+    </div>
+
+	
+	<script type="text/javascript" src="nameList.js"></script>
+	<script type="text/javascript" src="initialUI.js"></script>
+	<script type="text/javascript">
+    var tbody = document.querySelector(".tbody");
+    list(names,tbody);
+    
+    //设置已点
+    tbody.addEventListener("click",function(e){
+    	console.log(e);
+       var target = e.target;
+       var classChange = (target.className).substring(0,7);
+       console.log(classChange);
+       if(classChange==="setFlag"){
+       	var tr1 = target.parentNode.parentNode;
+       	var num = target.className.substring(8);
+       	names[num].flag = true;
+        tbody.innerHTML = "";
+        list(names,tbody);
+       }
+     });
+
+
+    
+    var btn = document.querySelector("button");
+    var sp = document.querySelector("h1");  
+     //点击按钮事件
+     var sum =0;
+    function btnClick(){
+        console.log(names.length);
+        var randomNum =  Math.floor(Math.random()*(names.length));
+        console.log(randomNum);
+        if(sum===names.length)//防止出现一直调用这个方法，陷入死循环
+        {
+         console.log("全部点完");
+        }else{
+        	 if(names[randomNum].flag){
+        		btnClick();
+        		return;
+        		}else{
+                   sum++;
+        		   names[randomNum].flag=true;
+                   sp.innerHTML = names[randomNum].name;
+        		}
+        }
+        tbody.innerHTML = "";
+        list(names,tbody);
+    }
+
+//重置方法
+    function reset(){
+        for(var i in names)
+        {
+            names[i].flag = false;
+        }
+        sum = 0;
+        tbody.innerHTML = "";
+        list(names,tbody);
+    }
+//添加学生
+
+function checkRepeat(opt){
+		for(let i in names){
+			if(names[i].name == opt.name){
+				return true;
+			}
+		}
+		return false;
+	}
+
+	function insertStudent(){
+		var txt = document.querySelector("#txt");
+        var inputValue = txt.value;
+        if(inputValue!=="")
+        {
+            var obj = {name:inputValue,flag:false};
+            if(!checkRepeat(obj)){
+                names.push(obj);
+            }   
+            tbody.innerHTML = "";
+            list(names,tbody);
+        }
+	}
+
+	</script>
+</body>
+</html>

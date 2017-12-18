@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>函数声明</title>
+</head>
+<body>
+    <script>
+    /*错误方法*/
+    fun1();
+    fun2();
+    function fun1 () {  //函数声明提升
+        console.log("函数1");
+    };
+    var fun2=function(){    //表达式需要先定义才能调用
+        console.log("函数2")
+    }
+    /*正确方法*/
+    function fun1 () {  //函数声明提升
+        console.log("函数1");
+    };
+    var fun2=function(){    //表达式需要先定义才能调用
+        console.log("函数2")
+    }
+    fun1();
+    fun2();
+    // function fun2(){
+    //     console.log("函数3")
+    // }
+    </script>
+</body>
+</html>

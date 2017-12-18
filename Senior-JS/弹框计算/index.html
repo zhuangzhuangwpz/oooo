@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+
+
+<script>
+    var num1=Number(prompt("请输入要计算的第一个数"));
+    var sign=prompt("请输入要计算的符号");
+    var num2=Number(prompt("请输入要计算的第二个数"));
+    function conter() {
+        var result=0;
+        switch (sign){
+            case "+":{
+                result=num1+num2;
+                break;
+            }
+            case "-":{
+                result=num1-num2;
+                break;
+            }
+            case "*":{
+                result=num1*num2;
+                break;
+            }
+            case "/":{
+                result=num1/num2;
+                break;
+            }
+            default:{
+                result="请输入正确的用算符";
+                break;
+            }
+        }
+        return result;
+    }
+    alert(conter())
+</script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

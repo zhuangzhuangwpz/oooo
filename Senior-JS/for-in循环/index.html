@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+<table border="1" id="tb">
+    <tr>
+        <td>商品</td>
+        <td>价格</td>
+    </tr>
+</table>
+<script>
+    var table=document.getElementById("tb");
+    var arry=[
+        {name:"衬衫",age:"45"},
+        {name:"裤子",age:"60"},
+        {name:"帽子",age:"25"},
+        {name:"鞋子",age:"85"},
+    ];
+    for(var i=0;i<arry.length;i++){
+        var tr=document.createElement("tr");
+        for(var x in arry[i]){
+            var td=document.createElement("td");
+            td.innerHTML=arry[i][x];
+            tr.appendChild(td)
+        }
+        table.appendChild(tr)
+    }
+    /*
+    在后台添加元素
+    首先要考虑添加的对象是什么——table
+    要添加什么——元素值
+    以什么形式添加——数组
+    添加几次，添加的几次与什么有关联——商品的种类有关联，用for循环
+    循环的次数与什么有关联——数组的节点数与次数的关联——创建一个i初始值为0
+    执行一次循环能添加一次什么——tr
+    tr有没有，是否需要创建还是获取——没有要创建
+    添加的数组要放到哪里去——添加到td
+    要添加几次，是否用循环——添加数组中节点的次数，用for循环
+    如何将数组中节点的属性值对应到td中——创建一个变量x使其为数组中对应每个节点的属性值
+     td有没有，是否需要创建还是获取——没有要创建
+     创建的td中有没有属性值，如何添加
+     td添加以后要往哪添加——tr
+     tr有其元素又该往哪添加——table
+    */
+</script>
+    <!-- JavaScript -->
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

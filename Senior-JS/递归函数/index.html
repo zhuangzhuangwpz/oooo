@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h1></h1>
+<script>
+    var a={name:"小白",age:"5岁"};
+    var b={name:"小白",age:"5岁"};
+    if(a===b){
+        console.log("等于")
+    }else {
+        console.log("不等")
+    }
+    var sum=0;
+    function sumNum(n){
+        if(n===1){
+            sum=1;
+        }else {
+            sum=n+sumNum(n-1);
+        }
+        return sum;
+    }
+    console.log(sumNum(10));
+</script>
+</body>
+</html>

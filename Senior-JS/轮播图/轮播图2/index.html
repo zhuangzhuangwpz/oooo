@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="css/main.min.css">
+</head>
+<style>
+    .appear{
+        display: block;
+    }
+    .disappear{
+        display: none;
+    }
+</style>
+<body  onload="show()">
+<div>
+    <div><img class="appear imageDiv" src="image/1.jpg" alt=""></div>
+    <div><img class="disappear imageDiv" src="image/2.jpg" alt=""></div>
+    <div><img class="disappear imageDiv" src="image/3.jpg" alt=""></div>
+    <div><img class="disappear imageDiv" src="image/4.jpg" alt=""></div>
+    <div><img class="disappear imageDiv" src="image/5.jpg" alt=""></div>
+</div>
+<script>
+    var divs=document.querySelectorAll(".imageDiv");
+    var num=0;
+    function show() {
+        if(num===divs.length){
+            num=0;
+        }
+        divs[num].setAttribute("class","appear imageDiv");
+        var max=divs.length-1;
+        var previous="";
+        if (num===0){
+            previous=divs[max];
+        }else {
+            previous=divs[num-1];
+        }
+        previous.setAttribute("class","disappear imageDiv");
+        num++;
+    }
+    setInterval(show,1000);
+</script>
+
+<script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*构造函数可以通过new 创建一个对象*/
+        /*return一般不用返回值，如果有返回值，返回值是原始类型那么new出的实例不改变，如果返回引用类型的，那么new出的实例就是返回值*/
+        /*而且构造函数中不能再创建b包，因为new创建的为一个对象，b包如果在创建在里面的话，那么就是对象里面套对象，new创建后如果里面含有b包，是获取不到的，只能以构建函数里面属性的方法例如this.CatName=function (){console.log("my name is miaomaio")}*/
+        function Cat(){
+            this.legNums=4;
+            this.headNums=1;
+            this.CatName=function (){
+                console.log("my name is miaomaio")
+            }
+        }
+        var litteCat=new Cat();
+        console.log(litteCat.CatName());
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Cat(name,age){
+            this.name=name;
+            this.age=age;
+        }
+        function Animal(){
+            this.name="小白";
+            this.tatilNum=1;
+            this.conle=function(){
+                console.log("继承构造函数属性,父级");
+            };
+        }
+        Cat.prototype=new Animal();/*构建继承函数中首先在自己本身选取属性值*/
+        var litteCat=new Cat("小黑",2);
+        console.log(litteCat.tatilNum);
+        console.log(litteCat.name);
+        litteCat.conle();
+    </script>
+</body>
+</html>
