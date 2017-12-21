@@ -1,0 +1,88 @@
+/* 网站底部
+制作团队：张宁乐 张猛 尹金宝 韩彩霞 徐惠南
+*/
+footer {
+  .footer-top {
+    background: #1b1b1b;
+    padding-top: 60px;
+    padding-bottom: 70px;
+    h3 {
+      color: #fff;
+      font-size: 14px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      li {
+        line-height: 1.5em;
+        a {
+          color: #949492;
+          font-size: 12px;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    background: #191919;
+    padding-top: 40px;
+    padding-bottom: 36px;
+    font-size: 12px;
+    color: #fff;
+    ul {
+      list-style: none;
+      li {
+        float: left;
+        a {
+          color: #fff;
+          display: inline-block;
+          padding: 6px;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    ul::after {
+      display: table;
+      content: "";
+      clear: both;
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  footer {
+    .footer-top {
+      text-align: center;
+    }
+    .footer-bottom {
+      text-align: center;
+      ul {
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    .footer-top {
+      text-align: center;
+      ul {
+        li {
+          text-align: center;
+        }
+      }
+    }
+    .footer-bottom {
+      text-align: center;
+      ul {
+        li {
+          float: left;
+        }
+      }
+    }
+  }
+}

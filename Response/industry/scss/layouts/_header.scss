@@ -1,0 +1,85 @@
+/* 网站头部 */
+header{
+
+  //    border: 1px solid red;
+  nav::after{
+    display: table;
+    clear: both;
+    content: "";
+  }
+  nav{
+    //        border: 1px solid red;
+    margin-top: 23px;
+    .logo{
+      float: left;
+      margin-top: 16px;
+    }
+    ul::after{
+      display: table;
+      clear: both;
+      content: "";
+    }
+    ul{
+      float: right;
+      margin-top: 9px;
+
+      li{
+        list-style:none;
+        float: left;
+        a{
+          font-size: 12px;
+          padding: 12px 18px;
+          display: block;
+          color: #696969;
+          border: 1px solid #fff;
+          height: 40px;
+          i{
+            margin-top: -18px;
+            margin-left: 68px;
+            color: #e48907;
+            position: absolute;
+          }
+        }:hover{
+           text-decoration: none;
+           color: #e48907;
+           border: 1px solid #e48907;
+           display: block;
+         }
+        .active{
+          color: #e48907;
+          border: 1px solid #e48907;
+        }
+        a:nth-child(2){
+          position: relative;
+        }
+      }
+    }
+  }
+}
+@media(max-width:720px){
+  .container{
+    width: 320px;
+  }
+  header nav .logo{
+    float: none;
+  }
+  nav .logo img{
+    display: block;
+    margin: auto;
+  }
+  header nav ul{
+    float: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  header nav ul li{
+    float: none;
+    text-align: center;
+    a i{
+      margin-top: 0;
+      margin-left: 8px;
+      color: #e48907;
+      position: absolute;
+    }
+  }
+}

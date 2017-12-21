@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/*! 盛邦升华 - start-industry */
+/* 网站头部 */
+header nav::after {
+  display: table;
+  clear: both;
+  content: ""; }
+
+header nav {
+  margin-top: 23px; }
+  header nav .logo {
+    float: left;
+    margin-top: 16px; }
+  header nav ul::after {
+    display: table;
+    clear: both;
+    content: ""; }
+  header nav ul {
+    float: right;
+    margin-top: 9px; }
+    header nav ul li {
+      list-style: none;
+      float: left; }
+      header nav ul li a {
+        font-size: 12px;
+        padding: 12px 18px;
+        display: block;
+        color: #696969;
+        border: 1px solid #fff;
+        height: 40px; }
+        header nav ul li a i {
+          margin-top: -18px;
+          margin-left: 68px;
+          color: #e48907;
+          position: absolute; }
+      header nav ul li :hover {
+        text-decoration: none;
+        color: #e48907;
+        border: 1px solid #e48907;
+        display: block; }
+      header nav ul li .active {
+        color: #e48907;
+        border: 1px solid #e48907; }
+      header nav ul li a:nth-child(2) {
+        position: relative; }
+
+@media (max-width: 720px) {
+  .container {
+    width: 320px; }
+  header nav .logo {
+    float: none; }
+  nav .logo img {
+    display: block;
+    margin: auto; }
+  header nav ul {
+    float: none;
+    padding: 0;
+    margin-top: 20px; }
+  header nav ul li {
+    float: none;
+    text-align: center; }
+    header nav ul li a i {
+      margin-top: 0;
+      margin-left: 8px;
+      color: #e48907;
+      position: absolute; } }
+
+/* 焦点图
+制作团队：闫仲萧 白文达 刘博 孟令晨
+*/
+.banner {
+  padding-top: 300px;
+  padding-bottom: 90px;
+  background-image: url(../img/banner.png);
+  background-size: 100% 100%;
+  color: #fff; }
+  .banner h2 {
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 15px; }
+  .banner p {
+    font-size: 20px; }
+
+@media (max-width: 720px) {
+  section.banner {
+    padding-top: 60px;
+    padding-bottom: 25px; }
+    section.banner .container {
+      padding: 0; } }
+
+@media (max-width: 960px) {
+  section.banner {
+    padding-top: 160px;
+    padding-bottom: 25px; } }
+
+@media (max-width: 430px) {
+  section.banner {
+    padding-top: 0;
+    padding-bottom: 25px; }
+    section.banner .container {
+      padding-left: 15px; } }
+
+/* 产品介绍
+制作团队：姬学华 王颖 李梦丽 何海威
+*/
+.products {
+  padding-bottom: 6px; }
+  .products h2 {
+    padding-bottom: 10px; }
+  .products .products-p {
+    font-size: 14px;
+    line-height: 1.5em;
+    padding-bottom: 50px;
+    text-align: left; }
+  .products p, .products h6 {
+    text-align: center; }
+  .products p {
+    color: #656565;
+    font-size: 12px; }
+    .products p i {
+      font-size: 60px;
+      color: #e48907;
+      padding-bottom: 40px; }
+    .products p a {
+      font-size: 12px;
+      color: #202d80; }
+  .products h6 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    padding-bottom: 20px; }
+  .products .products-border {
+    padding-top: 70px;
+    border: 1px solid #d4d4d4;
+    margin-bottom: 30px; }
+
+/* 团队介绍
+制作团队：宫成成，杨佳奇，王海涛，王重阳，毛庆鹍。
+*/
+.team {
+  background-color: #f5f5f5;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .team img {
+    width: 100%; }
+  .team p {
+    color: #656565;
+    line-height: 1.8em; }
+
+/* 网站底部
+制作团队：张宁乐 张猛 尹金宝 韩彩霞 徐惠南
+*/
+footer .footer-top {
+  background: #1b1b1b;
+  padding-top: 60px;
+  padding-bottom: 70px; }
+  footer .footer-top h3 {
+    color: #fff;
+    font-size: 14px; }
+  footer .footer-top ul {
+    list-style: none;
+    padding-left: 0; }
+    footer .footer-top ul li {
+      line-height: 1.5em; }
+      footer .footer-top ul li a {
+        color: #949492;
+        font-size: 12px; }
+        footer .footer-top ul li a:hover {
+          color: #fff; }
+
+footer .footer-bottom {
+  background: #191919;
+  padding-top: 40px;
+  padding-bottom: 36px;
+  font-size: 12px;
+  color: #fff; }
+  footer .footer-bottom ul {
+    list-style: none; }
+    footer .footer-bottom ul li {
+      float: left; }
+      footer .footer-bottom ul li a {
+        color: #fff;
+        display: inline-block;
+        padding: 6px; }
+        footer .footer-bottom ul li a:hover {
+          text-decoration: none; }
+  footer .footer-bottom ul::after {
+    display: table;
+    content: "";
+    clear: both; }
+
+@media (max-width: 990px) {
+  footer .footer-top {
+    text-align: center; }
+  footer .footer-bottom {
+    text-align: center; } }
+
+@media (max-width: 768px) {
+  footer .footer-top {
+    text-align: center; }
+    footer .footer-top ul li {
+      text-align: center; }
+  footer .footer-bottom {
+    text-align: center; }
+    footer .footer-bottom ul li {
+      float: left; } }
