@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GrandHost</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			
+		}
+		header,section.main,footer{
+			width: 950px;
+			margin: 0 auto;
+			
+			overflow: hidden;}
+		h1{display: none;}
+		.logo .logo-left img{
+			margin:25px 0 0 52px;
+			float: left;
+		}
+		.logo .logo-right{
+			float: left;
+			margin:30px 45px 0 322px;
+		}
+		.logo .logo-right span{
+			font-size: 18px;
+			color: #000;
+			font-weight: 500px;
+		}
+		.inputa{
+			width: 178px;
+			height: 18px;
+			background-color: #f5f5f5;
+			margin-left: 12px;}
+		.inputb{
+			width: 67px;
+			height: 25px;
+			background-image: url(images/789.gif);
+			color:#fff;
+			margin-right: 16px;}
+		select{
+			width: 60px;
+			height: 20px;
+			color: #000;
+			background-color: #f5f5f5;
+		}
+		select option{
+			color: #000;
+			background-color: #f5f5f5;
+		}
+		.logo-right{padding-bottom: 30px;}
+		nav{
+			width: 945px;
+			
+			border-radius: 20px;
+			border:solid #dadada 2px;
+			float: left;
+			
+			overflow: hidden;
+		}
+		nav ul li{
+			list-style: none;
+			float: left;
+			}
+		.ku{
+			width: 202px;
+			border-right: none;
+		}
+			
+		.block{
+			background-image: url(images/456.gif);
+			border-right: none;
+			
+			}
+		
+		nav ul li a{
+			text-decoration: none;
+			display: block;
+			border-left: solid #dadada 1px;
+			line-height: 25px;
+			padding:0 39px;
+			margin:8px 0px;
+			border-right: solid #fff 1px;
+			color: #5e5e54;
+			
+			
+			
+		}
+		nav ul li:hover{
+			color: #fff;
+			background-image: url(images/456.gif);
+
+		}
+		nav ul li:hover a{
+			border-left:none;
+			border-right:none;
+			padding: 0 38px;
+		}
+		
+		.banner{
+			height: 270px;
+			width: 950px;
+			border-radius: 13px;
+			background-color: #3d3b3c;
+			float: left;
+			margin-top: 70px;}
+		.banner-left{
+			width: 385px;
+			height: 183px;
+			margin:45px 0 0 45px;
+			float: left;
+		}
+		.banner-right{
+			float: left;
+		}
+		.banner .banner-left span{
+			font-size: 35px;
+			font-weight: 900px;
+			color: #fff;
+		}
+		.banner .banner-left img{
+			float: left;
+			margin: -122px 0 0 290px;
+		}
+		.banner .banner-left u{
+			margin-left: 290px;
+			color: #f4a03b;
+			margin-top: -23px;
+			float: left;
+		}
+		.banner .banner-left ul{
+			line-height: 25px;
+			margin-left: 20px;
+			color:#fff;
+			font-size: 20px;
+		}
+		.banner .banner-right img{
+			margin:10px 0 0 10px;
+			float: left;
+		}
+		header .banner .banner-left ul li{
+				list-style: none;
+				background-image: url(images/xiaodian.gif);
+				background-position: left center;
+				background-repeat: no-repeat;
+				padding-left: 20px;
+				font-size: 16px;
+		}
+		/*以上是头部*/
+		.main-top{
+			height: 136px;
+			font-size: left;
+
+		}
+		.main-top-l{
+			float: left;
+			width: 306px;
+			height: 111px;
+			background-color: red;
+			margin-top: 20px;
+			background-color: #fff;
+			border-radius: 20px;
+			border:solid 2px #dadada;
+			position: relative;
+		}
+
+		.main .main-top .main-top-l img{
+			position: absolute;
+			margin:-10px 0 0 20px;
+
+		}
+		.main-top-ll,.main-top-rr,.main-top-cc{
+			width: 188px;
+			height: 86px;
+			float:right;
+			margin:12px 17px 0 0;
+			background-color: #fff;
+			line-height: 24px;
+		}
+		.main-top-c{
+			float: left;
+			width: 306px;
+			height: 111px;
+			
+			margin-top: 20px;
+			background-color: #fff;
+			border-radius: 20px;
+			border:solid 2px #dadada;
+			margin-left: 10px;
+			position: relative;
+
+		}
+
+		.main .main-top .main-top-c img{
+			position: absolute;
+			margin:-10px 0 0 20px;
+		}
+		.main-top-r{
+			float: left;
+			width: 306px;
+			height: 111px;
+			
+			margin-top: 20px;
+			background-color: #fff;
+			border-radius: 20px;
+			border:solid 2px #dadada;
+			margin-left: 10px;
+			position: relative;
+
+		}
+		.main .main-top .main-top-r img{
+			position: absolute;
+			margin:-10px 0 0 20px;
+		}
+		.ll{
+			font-size: 17px;
+			color: #5b5b5b;
+			font-family: arial;
+		}
+		.tt{
+			font-size: 19px;
+			color: #eba136;
+			font-family: arial;
+		}
+		.mtip{
+			width: 170px;
+			height: 28px;
+			background-image: url(images/jk.gif);
+			color: #fff;
+			border-radius: 5px;
+
+		}
+		.main-ctl{
+			width: 452px;
+			height: 214px;
+			
+			float: left;
+			margin:7px 0 0 31px;
+			border-right: solid 1px #dadada;
+
+		}
+		.main-ctr{
+			width: 452px;
+			height: 214px;
+			text-indent:50px;
+			float: left;
+			margin:7px 0 0 0;
+		}
+		h2{
+			font:arial;
+			color: #000;
+			font-size: 25px;
+			display: inherit;
+			
+		}
+		.main .main-ctl ul li{
+			color: #000;
+			font-size: 13px;
+			font:arial;
+			font-weight: 3px;
+			margin-left: 20px;
+			line-height: 22px;
+		}
+		.main .main-ctl .xiaojin{
+			font-size: 14px;
+			color: #f4a03b;
+			margin-left: 24px;
+		}
+		.main .main-ctr .xiaojin{
+			font-size: 14px;
+			color: #f4a03b;
+			margin-left: 4px;
+		}
+		.dajin{
+			color: #f4a03b;
+			font:arial;
+			
+			font-size: 25px;
+		}
+		.main .main-ctr .w{
+			color: #000;
+			font-size: 13px;
+			font:arial;
+			font-weight: 3px;
+			margin-left: 50px;
+			line-height: 22px;
+			
+		}
+		.main .main-ctr p{
+			color: #000;
+			font-size: 13px;
+			font:arial;
+			font-weight: 3px;
+			
+			line-height: 32px;
+		}
+		.main-bottom{
+		height: 180px;
+		width: 950px;
+		
+		float: left;
+		margin-top: 30px;
+		background-color: #f3f3f3;
+		border:solid 1px #dadada;
+		border-radius: 10px;
+		}
+		.main .main-bottom h2{
+			text-indent: 30px;
+		}
+		.z,.x,.c,.v,.b,.n{
+			width: 150px;
+			height: 100px;
+			border-left: solid 1px #dadada;
+			float: left;
+			text-align: center;
+
+		}
+		.main .main-bottom .z{
+			margin-left: 30px;
+			border-left: 0;
+		}
+		footer ul{
+			margin-left: 60px;
+		}
+		footer ul li{
+			list-style: none;
+			float: left;
+			text-align: center;
+			border-left: solid 2px #000;
+			margin-top: 50px;
+			width: 130px;
+		}
+		footer{
+			height: 303px;
+		}
+		.wu{
+			border-left: 0;
+		}
+		footer span{
+			margin:50px 0 0 20px;
+			display: block;
+			float: left;
+		}
+		.be{
+			float: left;
+			margin:50px 20px 0 290px ;
+		}
+		footer .be u{color: #f4a03b; }
+		footer ul li a{
+			color: #000;
+		}
+		.k145{
+			width: 145px;
+		}
+		.zw{
+			border-left: none;
+			color: #fff;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1>GrandHost</h1>
+		<div class="logo">
+			<div class="logo-left">
+				<img src="images/logo.gif" alt="">
+			</div>
+			<div class="logo-right">
+				<span>&nbsp;Check Domain Name:</span>
+				<br>
+				<input type="text" class="inputa">
+				<select name="" class="">
+					<option value=".com" selected="select">.com</option>
+					<option value=".com"></option>
+					<option value=".cn"></option>
+					<option value="123"></option>
+					<option value="456"></option>
+					<option value="789"></option>
+				</select>
+				<input type="button" value="Startl" class="inputb">
+			</div>
+		</div>
+		<nav>
+			<ul>
+				<li class="block"><a href="#" class="zw">HOME</a></li>
+				<li><a href="#">HOSTING PLANS</a></li>
+				<li><a href="#">F.A.Q.</a></li>
+				<li><a href="#">TESTLMONIALS</a></li>
+				<li><a href="#">CONTACTS</a></li>
+				<li class="ku"><a href="#">PRIVACY POLICY</a></li>
+			</ul>
+		</nav>
+		<div class="banner">
+			<div class="banner-left">
+				<span>Ultimate Hosting Plan</span>
+				<br><br>
+				<ul>
+					<li>UNLOMITED space!</li>
+					<li>UNLOMITED bandwisth!</li>
+					<li>UNLOMITED MySQL databases!</li>
+					<li>FREE Domain!</li>
+					<li>99.99% Uptime!</li>
+				</ul>
+				<img src="images/fvbf.gif" alt="">
+				<u>LEARN MORE</u>
+			</div>
+			<div class="banner-right">
+				<img src="images/ada1_03.gif" alt="">
+			</div>
+		</div>
+	</header>
+		<!-- 以上是头部 -->
+	<section class="main">
+		<div class="main-top">
+			<div class="main-top-l"><img src="images/ada1_07.gif" alt="">
+				<div class="main-top-ll">
+					<span class="ll">PERSONAL WEBSITE</span>
+					<span class="tt">$1.95/month</span>
+					<br>
+					<input class="mtip" type="button" value="OPDER NOW">
+				</div>
+			</div>
+			<div class="main-top-c"><img src="images/654564.gif" alt="">
+				<div class="main-top-cc">
+				<span class="ll">PERSONAL WEBSITE</span>
+					<span class="tt">$1.95/month</span>
+				<br>
+					<input class="mtip" type="button" value="OPDER NOW">
+				</div>
+			</div>
+			<div class="main-top-r"><img src="images/预览图_13.gif" alt="">
+				<div class="main-top-rr">
+				<span class="ll">PERSONAL WEBSITE</span>
+					<span class="tt">$1.95/month</span>
+				<br>
+					<input class="mtip" type="button" value="OPDER NOW">
+				</div>
+			</div>
+		</div>
+		<div class="main-ctl">
+			<h2>special Offers!</h2>
+			<br>
+			<ul>
+				<li>$9.95 worth domain fo FREE with th eUitimate`hosting plan</li>
+				<li>50% disoount for retuming cshomersl</li>
+				<li>Free eCommerce installationl</li>
+				<li>$75commission for top permming affillatesl</li>
+				<li>20% discounnt for `Dedincated server`orders for 24+monthst</li>
+				<li>$25 Google AdWords and Yahoo website maketing creditel</li>
+				<br>
+				 <span class="xiaojin"><u>Learm More</u>
+				 </span>
+			</ul>
+		</div>
+		<div class="main-ctr">
+			<h2>Transfer Dmain-<span class="dajin">FREE!</span></h2>
+			<br>
+			<span class="w">With our company you may trandger </span><p><span class="">the domain from other host aboiutely for free.</span><p>In addition ot that we will provide a free <p>technicalassistanmce during the transfer process.
+			<p>
+
+			<span class="xiaojin"><u>Learm More</u>
+		</div>	
+		<div class="main-bottom">
+			<h2>Our Awards</h2>
+			<br>
+			<div class="z"><img src="images/z.gif" alt=""></div>
+			<div class="x"><img src="images/x.gif" alt=""></div>
+			<div class="c"><img src="images/c.gif" alt=""></div>
+			<div class="v"><img src="images/v.gif" alt=""></div>
+			<div class="b"><img src="images/b.gif" alt=""></div>
+			<div class="n"><img src="images/n.gif" alt=""></div>
+		</div>
+		
+	</section>
+		<!-- 以上是网站的主要内容 -->
+	<footer>
+		<ul>
+			<li class="wu"><a href="#"><u>Home</u></a></li>
+			<li><a href="#"><u>Hosting plans</u></a></li>
+			<li><a href="#"><u>F.A.Q.</u></a></li>
+			<li><a href="#"><u>Testimoniais</u></a></li>
+			<li><a href="#"><u>Contacts</u></a></li>
+			<li><a href="#"><u>Privacy policy</u></a></li>
+		</ul>
+		<p>
+		<span>Copyright(c)2009 GramdHraost Inc.</span>
+		<span class="be">Klifer<u>Fiash Templates</u>from TemplateMonster.</span>
+	</footer>
+	
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>gourmet</title>
+	<style>
+	*{
+		padding: 0;
+		margin: 0;
+		
+	}
+		body{
+			background-image: url(images/tail-header.gif);
+		}
+		header{width: 1170px;
+				overflow: hidden;
+				margin: 0 auto;
+				border-top: solid 4px red;
+				background-image: url(images/tail-header.gif);}
+		.logo{width: 201px;
+				height: 90px;
+				background-image: url(images/logo.png);
+				margin-top: 30px;
+				margin-left: 90px;
+				float: left;}
+		.nav{width: 700px;
+			height: 50px;
+			margin-top: 30px;
+			margin-left: 80px;
+			float: left;
+			}
+		.nav ul li {	list-style: none;
+					float: left;
+			}
+			.nav ul li a{text-align: center;
+					text-decoration: none;
+					display:block;
+					width:90px;
+					height: 20px;
+					font-size:16px;
+					padding-bottom: 10px;
+					color: #000;
+					margin-left: 10px;
+					padding-top: 12px;
+			}
+			.nav ul li a:hover{color: red;
+					background-image: url(images/bg-body.gif);
+					border-radius: 6px;}
+			.bjs{
+				background-image: url(images/bg-body.gif);
+				border-radius: 8px;
+			}
+			.hc{width: 1056px;
+				height: 630px;
+				margin: 0 auto;}
+			.hf{width: 980px;
+				height: 120px;
+				margin: 0 auto;
+				line-height: 16PX;}
+			h2{text-align: center;
+				font-size: 41px;
+				padding-top: 10px;
+				line-height: 10px;
+				padding-bottom: 20px;}
+			.red{color: red;}
+			.jz{text-align: center;
+				margin-left: 250px;
+				line-height: 28px;}
+			.main{width: 1170px;
+				height: 430px;
+				margin: 0 auto;
+				background-image: url(images/tail-cont.gif);
+				margin-top: 1px;
+				}
+			.main p{
+				line-height: 23px;
+			}
+			.mainleft{width: 300px;
+					height: 405px;
+					margin-top: 20px;
+					margin-left: 100px;
+					
+					float: left;}
+			.maincenter{width: 300px;
+					height: 405px;
+					margin-top: 20px;
+					margin-left: 30px;
+					
+					float: left;}
+			.mainright{width: 300px;
+					height: 405px;
+					margin-top: 20px;
+					margin-left: 30px;
+					float: left;}
+			.cr{color: red;
+				font-size: 30px;
+				font-weight:700;}
+			.cf{font-size: 30px;
+				font-weight:700;}
+			.l{width: 280px;
+				height: 146px;
+				border:#fff 10px solid;
+				overflow: hidden;
+				background-color: #fff;
+				margin-top: 10px;
+				border-radius: 9%;
+				background-image: url(images/page1-img1.jpg);}
+			.c{width: 280px;
+				height: 146px;
+				border:#fff 10px solid;
+				overflow: hidden;
+				background-color: #fff;
+				margin-top: 10px;
+				border-radius: 9%;
+				background-image: url(images/page1-img2.jpg);}
+			.r{width: 280px;
+				height: 146px;
+				border:#fff 10px solid;
+				overflow: hidden;
+				background-color: #fff;
+				margin-top: 10px;
+				border-radius: 9%;
+				background-image: url(images/page1-img3.jpg);}
+			.r1{width: 120px;
+				height: 30px;
+				background-color: #db3222;
+				text-align: center;
+				padding-top: 10px;
+				color: #fff;
+				margin-top: 12px;}
+			.maina{width: 1170px;
+				height: 460px;
+				margin: 0 auto;
+				background-image: url(images/tail-cont.gif);
+				margin-top: 1px;
+				padding-top: 35px;
+				}
+			.maina1{width: 308px;
+					height: 403px;
+					margin-left: 100px;
+					
+					float: left;}
+			.maina2{width: 646px;
+					height: 145px;
+					margin-left: 30px;
+					
+					float: left;}
+			.maina3{width: 650px;
+					height: 236px;
+					margin-left: 30px;
+					margin-top: 30px;
+					
+					float: left;}
+			.cra{color: red;
+				font-size: 22px;}
+			.znl{color: red;
+				font-size: 80px;}
+			.maina .maina2 p{text-align: right;
+				color: red;}
+			.m3a{width: 194px;
+				height: 223px;
+				float: left;
+				}
+			.m3aa{width: 60px;
+				height: 56px;
+				border-radius: 50%;
+				background-color: red;
+				font-size: 50px;
+
+				text-align: center;
+				color:#fff;
+				}
+			.m3at{width: 171px;
+				height: 133px;
+				border-radius: 10%;
+				background-image:url(images/page1-img4.jpg);
+				border:solid #fff 10px;}
+			.m3b{width: 194px;
+				height: 223px;
+				float: left;
+				margin-left: 20px;
+				}
+			.m3ba{width: 60px;
+				height: 56px;
+				border-radius: 50%;
+				background-color: red;
+				font-size: 50px;
+				text-align: center;
+				color:#fff;
+				}
+			.m3bt{width: 171px;
+				height: 133px;
+				border-radius: 10%;
+				background-image:url(images/page1-img5.jpg);
+				border:solid #fff 10px;}
+			.m3c{width: 194px;
+				height: 223px;
+				float: left;
+				margin-left: 20px;
+				}
+			.m3ca{width: 60px;
+				height: 56px;
+				border-radius: 50%;
+				background-color: red;
+				font-size: 50px;
+				text-align: center;
+				color:#fff;
+				}
+			.m3ct{width: 171px;
+				height: 133px;
+				border-radius: 10%;
+				background-image:url(images/page1-img6.jpg);
+				border:solid #fff 10px;}
+			.m3aw1{width: 113px;
+					height: 50px;
+					margin-bottom: -53px;
+					margin-left: 60px;
+					font-size: 20px;
+					font-weight: 600;
+					}
+			.m3aw2{width: 113px;
+					height: 50px;
+					margin-bottom: -53px;
+					margin-left: 60px;
+					font-size: 20px;
+				font-weight: 600;}
+			.m3aw3{width: 113px;
+					height: 50px;
+					margin-bottom: -53px;
+					margin-left: 60px;
+					font-size: 20px;
+				font-weight: 600;}
+			footer{width: 1170px;
+					height: 160px;
+					border-top: #fff solid 1px;
+					background-image: url(images/tail-cont.gif);
+					margin: 0 auto;}
+			.biao{width: 145px;
+					height: 36px;
+					margin-left: 174px;
+					margin-top: 24px;
+					background-image: url(images/tail-cont.gif)
+					}
+			.b1{width: 30px;
+				height: 30px;
+				float: left;
+				background-image:url(images/icon-1.png); }
+			.b2{width: 30px;
+				height: 30px;
+				float: left;
+				background-image:url(images/icon-2.png); }
+			.b3{width: 30px;
+				height: 30px;
+				float: left;
+				background-image:url(images/icon-3.png); }
+			.b4{width: 30px;
+				height: 30px;
+				float: left;
+				background-image:url(images/icon-4.png); }
+			.yv{width: 848px;
+					height: 57px;
+					margin-left: 102px;
+					margin-top: 0px;}
+			footer .yv span{color: red;}
+	</style>
+</head>
+<body>
+	<header>
+			<div class="logo"></div>
+			<div class="nav">
+				<ul>
+					<li> <a href="#" class="bjs">HOME</a></li>
+					<li> <a href="#">COURSES</a></li>
+					<li> <a href="#">RECIPES</a></li>
+					<li> <a href="#">CALENDAR</a></li>
+					<li> <a href="#">CHEFS</a></li>
+					<li> <a href="#">CONTACTS</a></li>
+				</ul>
+			</div>
+			<div class="hc"><img src="images/poi.gif" alt=""></div>
+			<div class="hf">
+				<h2>WELCOME TO GOURMET COOKING DCHOOL!</h2>
+				<p>
+				AT VERO EOS ET <span class="red">ACCUSAM ET</span> JUSTO DUO DOLORES ET RA REBUM.STET CLITA KASD GUCRRGEN,NO SEA TAKMATA SANCTUS,KVERI SUE LPOSE </P><p>
+				<span class="jz">EST LOREM IPSUM DOLOR SIT AMET LOREM LIREM IPSUM DOLOR SIT AMET.</span>
+			</div>	
+	</header>
+	<div class="main">
+		<div class="mainleft">
+			<span class="cr">VEGAN</span>
+			<br>
+			<span class="cf">COOLINGS</span>
+			<div class="l"></div>
+			<br>
+			<p><span class="red">CLICK HERE</span>
+			FOR MORE INFO ABOUT THIS FREE TEMPLATE CREATED BY TEMPLATEMONSER.COM TEAM</p>
+			<div class="r1">READ MORE</div>
+		</div>
+		<div class="maincenter">
+			<span class="cr">GRILL</span>
+			<br>
+			<span class="cf">COKINGS</span>
+			<div class="c"></div>
+			<br>
+			<p>THIS WEB TEMPLATE IS OPTIMIZED FOR1280*1024 SCREEN RESOLUTION.IT IS ALSO XHTML.&CSS VALID.</p>
+			<div class="r1">READ MORE</div>
+		</div>
+		<div class="mainright">
+			<span class="cr">DESSERT</span>
+			<br>
+			<span class="cf">COKINGS</span>
+			<div class="r"></div>
+			<br>
+			<p>THE PSD SOURCE FILES OF THIS TEMPLATE ARE AVAILABLE FOR EREEFOR THE REGISTERED MEMBERS.</p>
+			<div class="r1">READ MORE</div>
+		</div>
+	</div>
+	<div class="maina">
+		<div class="maina1">
+			<span class="cf">POPULAR</span>
+			<p>
+			<span class="cra">LIGHTER COOLING</span>
+			<BR>AT VERO EOST ET ACCUSAM ETUSTO DODORES ST EA REBUM.<BR><BR>
+			<span class="cra">PUDDING</span>
+			<BR>DUIS AUTEM VEL EUM IRURE FOLOR IN HENDRERIT.<BR><BR>
+			<span class="cra">BLACK BEAN SALSA</span>
+			<BR>MOLESTIE CONSEQUAT,VEL ILLUM DOLORE EU FEUGIAT,<BR><BR>
+			<span class="cra">ASPARAGUS</span>
+			<BR>VULPUTATE VELIT ESSE MOLESTIE CONSEQUAT.<BR><BR>
+		</div>
+		<div class="maina2">
+			<span class="cf">PROFESSIONAL PROGRAMS</span>
+			<br>
+			<img src="images/quote-part.png" alt="">
+			LOREM IPSUM DOLOR SIT, AMET,CONSETETUR SADIPSCING ELTYEM,SED BOONUMY DURMOD TEMPORINVIDUNT UT LABORE RT DOLORE MACN ALIQUYM ERATM SED DIAM VOLUPIUA AT VERO EOS.
+			<p>-JAMES WILL</p>
+		</div>
+		<div class="maina3">
+			<div class="m3a">
+				<div class="m3aw1">LORPSUM DOLOR</div>
+				<div class="m3aa">A</div>
+				<br>
+				<div class="m3at"></div>
+			</div>
+			<div class="m3b">
+
+				<div class="m3aw2">CONSETET SADIPING</div>
+				<div class="m3ba">B</div>
+				<br>
+				<div class="m3bt"></div>
+			</div>
+			<div class="m3c">
+				<div class="m3aw2">DIAM NONUMY</div>
+				<div class="m3ca">C</div>
+				<br>
+				<div class="m3ct"></div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="biao">
+			<div class="b1"></div>
+			<div class="b2"></div>
+			<div class="b3"></div>
+			<div class="b4"></div>
+		</div>
+		<div class="yv">
+			POPULAR FREE WEB TEMPLATES <span>AT WWW.WEBSITEYMPLATESONLINE.COM,KJFDOISAJFNOAERJAK,CETJOOMLATEMPLATESFREE,COM-</span><BR>
+			WEBSITE`TEMPLATE DESIGESIGNED BY<br>
+			WEBSITE`TEMPLATE DESIGESIGNED BY <span>
+			KDJFOA,YRMPLATEMONSTRE.COM</span>
+		</div>
+		
+	</footer>
+</body>
+</html>

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BREAKING</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			font-family: arial;
+		}
+		#container{
+			width: 840px;
+			height: 1030px;
+			margin: 0 auto;
+			background-color: #f1e9d6;
+
+		}
+		header,nav,.main,footer{
+			margin:0 auto;
+			width: 980px;
+			overflow: hidden;
+		}
+		header{
+			width: 747px;
+			height: 427px;
+			background-image: url(images/header_pic.jpg);
+			background-repeat: no-repeat;
+			margin-bottom:20px;
+		}
+		h1{
+			display: none;
+		}
+		header .logo-left{
+			width: 350px;
+			height: 110px;
+			overflow: hidden;
+			border-radius: 3px;
+			border:solid 1px #c5b692;
+			margin:25px 0 0 0px;
+			background-color: #fff;
+		}
+		.logo-left-1{
+			width: 152px;
+			height: 22px;
+			font-size: 18px;
+			color: #704f01;
+			float: left;
+			margin:15px 0 0 27px;
+			background-color: #fff;
+		}
+		.logo-left-2{
+			width: 143px;
+			height: 38px;
+			float: left;
+			color: #000;
+			font-size: 12px;
+			margin:40px 0 0 -150px;
+
+		}
+		.logo-left-2 input{
+			width: 130px;
+			height: 20px;
+			border:solid 1px #c5b692;
+			border-radius: 3px;
+			background-color:#e9dfc6; 
+		}
+		.logo-left-3 input{
+			width: 130px;
+			height: 20px;
+			border:solid 1px #c5b692;
+			border-radius: 3px;
+			background-color:#e9dfc6; 
+		}
+		.logo-left-3{
+			width: 143px;
+			height: 38px;
+			float: left;
+			color: #000;
+			font-size: 12px;
+			margin:40px 0 0 -10px;
+
+		}
+		.logo-left-4{
+			width: 300px;
+			height: 15px;
+			float: left;
+			margin:6px 0 0 29px;
+			font-size:12px;
+			color: #000;
+
+		}
+		.logo-bottom{
+			width: 160px;
+			height: 60px;
+			background-color: #f1e9d6;
+			margin:210px 0 0 167px;
+			float: left;
+
+		}
+		.logo-bottom span{
+			color: #281d00;
+			font-size: 35px;
+
+		}
+		.logo-bottom p{
+			font-size:19px;
+			color: #866005;
+			text-align: right;
+			margin-right: -18px;
+		}
+		.logo-right{
+			width: 190px;
+			height: 370px;
+			float: left;
+			margin:-95px 0 0 226px;
+		}
+		.logo-right-top{
+			width: 188px;
+			height: 107px;
+			border:solid 1px #c5b692;
+			border-radius:3px;
+			background-color: #fdfdfe;
+		}
+		.logo-right-top-a{
+			width: 146px;
+			height: 82px;
+			
+			margin: 0 auto;
+			margin-top: 11px;
+			background-image: url(images/rightSide_icon.gif);
+			background-repeat: no-repeat;
+
+		}
+		.logo-right-top-a span{
+			margin-left: 36px;
+			font-size: 18px;
+			color: #704f01;
+		}
+		.logo-right-top-a p{
+			color: #704f2e;
+			font-size: 12px;
+			line-height: 20px;
+
+		}
+		.logo-right-top-a input{
+			width: 142px;
+			height: 20px;
+			border:solid 1px #c5b692;
+			border-radius: 3px;
+			background-color:#e9dfc6; 
+		}
+		.logo-right-top-a-1{
+			width: 156px;
+			height: 14px;
+			color: #704f2e;
+			font-size: 8px;
+			line-height: 30px;
+		}
+		.img{
+			    margin: -21px 15px 0 8px;
+    			float: right;
+		}
+		.imx{
+			margin: 1px 8px 0 0px;
+		}
+		.logo-right-top-a-1 span{
+			margin-left: -5px;
+			font-size: 8px;
+
+		}
+				nav{
+			width: 190px;
+			height: 160px;
+			float: left;
+			clear: both;
+			margin-top:20px;
+
+		}
+		nav ul li{
+			list-style: none;
+			width: 122px;
+			height: 21px;
+
+
+
+		}
+		nav ul li a{
+			text-decoration: none;
+			line-height: 31px;
+			margin-bottom: 10px;
+			margin-left: 3px;
+			font-size: 14px;
+			color: #765914;
+			
+		}
+		nav ul li img{
+			text-align:bottom;
+		}
+		.xvxian{
+			background-image: url(images/xvxian.png);
+			background-repeat: no-repeat;
+			margin-top: 6px;
+		}
+		.jiantou{
+			margin-bottom: -4px;
+		}
+		.logo-right-bottom{
+			width: 183px;
+			height: 56px;
+			float: left;
+			margin-top:20px;
+		}
+		.logo-right-bottom span{
+			font-size: 26px;
+			color: #281d00;
+		}
+		.logo-right-bottom p{
+			font-size: 24px;
+			color: #765914;
+		}
+		.main{
+			width: 750px;
+			height: 370px;
+			margin: 0 auto;
+			overflow: hidden;
+
+		}
+		.main-left{
+			width: 350px;
+			height: 350px;
+			float: left;
+			background-color: #faf8f2;	
+			border-radius: 3px;
+			border:1px solid #cbbd9a;
+		}
+		.main .main-left span{
+			font-size: 24px;
+			color: #765914;
+			margin-left: 30px;
+			margin-top: 20px;
+			float: left;
+		}
+		.left-ul{
+			width: 100px;
+			height: 180px;
+			color: #313131;
+			font-size:13px;
+			float: left;
+			margin:46px 0 0 -144px;
+		}
+		.left-ul ul li{
+			list-style: none;
+			line-height: 40px;
+		}
+		.left-bg{
+			width: 200px;
+			height: 280px;
+			float: left;
+			line-height: 38px;
+			}
+		.dtex{
+			margin-top: 10px;
+		}
+		.main .main-left .left-bg img{
+			margin:0px 0 24px 141px;
+		}
+		.main .main-left .left-bg input{
+			width: 190px;
+			height: 23px;
+			background-color: #e9dfc6;
+			border:1px solid #cbbd9a;
+			border-radius: 3px;
+
+		}
+		.main .main-left .left-bg textarea{
+			background-color: #e9dfc6;
+			border:1px solid #cbbd9a;
+			border-radius: 3px;
+			width: 191px;
+			height: 83px;
+		}
+		.main-center{
+			width: 155px;
+			height: 350px;
+			float: left;
+			border-top:solid 3px #f9f5ed;
+			border-bottom:solid 3px #f9f5ed;
+			border-right:solid 3px #f9f5ed;
+			border-top-right-radius: 6px;
+			border-bottom-right-radius: 6px;
+			margin-left: 25px;
+			background-color: #e0d1af;
+
+		}
+		.main-center span{
+			font-size: 23px;
+			color: #704f01;
+			font-weight: 800;
+			margin-left: 20px;
+		}
+		.main-center p{
+			margin-left: 30px;
+			font-size: 13px;
+			font-weight: 600;
+			color: #000;
+			margin-left: 23px;
+			
+		}
+		.main-center .mc1 ul li img{
+			margin-bottom: -3px;
+		}
+		.mc1 ul li{
+			list-style: none;
+			width: 95px;
+			/*height: 15px;*/
+			border-bottom:dashed  1px #704f01;
+			line-height: 15px;
+			font-size: 12px;
+			margin-bottom: 2px;
+			padding-bottom: 1px;
+		}
+		.mc1 ul{
+			margin-left: 24px;
+			
+		}
+		#qb{
+			border-bottom:none;
+		}
+		.main-right{
+			width: 200px;
+			height: 365px;
+			float: left;
+			margin-left: 15px;
+			font-size: 13px;
+			line-height: 16px;
+			margin-top: -2px;
+		}
+		.mt{
+			line-height: 25px;
+		}
+		.main-right div{
+			margin:15px 0 0 105px;
+		}
+		footer{
+			width: 750px;
+			height: 105px;
+			margin: 0 auto;
+			background-color: #2b2517;
+			margin-top: 18px;
+			overflow: hidden;
+			padding-top: 25px;
+		}
+		footer ul li{
+			list-style: none;
+			float:left;
+
+		}
+		
+		footer ul li a{
+			display: block;
+			text-decoration: none;
+			
+			height: 14px;
+			font-size: 13px;
+			color: #f1e9d6;
+			border-left:solid 3px #f1e9d6;
+			padding: 4px 5px 4px 5px;
+		}
+		.keke{
+			border-left:none;
+			margin-left: 106px;
+		}
+		footer .text{
+			width: 650px;
+			height: 77px;
+			color: #f1e9d6;
+			margin: 0 auto;
+			font-size: 16px;
+
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<div class="logo-left">
+				<h1>BREAKING</h1>
+				<div class="logo-left-1">
+					<img src="images/member_icon.gif" alt="">
+					members login
+				</div>
+				<div class="logo-left-2">
+					YOUR NAME 	<input type="text">
+				</div>
+				<div class="logo-left-3">
+					PASSWORD	<input type="text">
+				</div>
+				<div class="logo-left-4">
+					<img src="images/x.gif" alt="">
+					REMEMNER MY PASSWORD
+					<img src="images/login_bu.gif" alt="">
+				</div>
+				
+			</div>
+				<div class="logo-bottom">
+					<span>BREAKING</span>
+					<p>ONTOP</p>
+
+				</div>
+			<div class="logo-right">
+				 <div class="logo-right-top">
+					<div class="logo-right-top-a">
+						<span>search</span>
+						 <p>THESEARCH TERM</p>
+						<input type="text">
+						<div class="logo-right-top-a-1">
+							<img class="imx" src="images/x.gif" alt=""> 
+							<span>ADVACE SEARCH</span>
+							<img class="img" src="images/go.gif" alt="">
+						</div>
+					</div>
+				 </div>
+				 <nav>
+					<ul>
+						<li><a href="#"><img class="jiantou" src="images/navi_arerow_h.gif" alt="">Home</a></li>
+						<li class="xvxian"><a href="#"><img class="jiantou" src="images/navi_arerow.gif" alt="">Network</a></li>
+						<li class="xvxian"><a href="#"><img class="jiantou" src="images/navi_arerow.gif" alt="">New Submis</a></li>
+						<li class="xvxian"><a href="#"><img class="jiantou" src="images/navi_arerow.gif" alt="">Latest Archives</a></li>
+						<li class="xvxian"><a href="#"><img class="jiantou" src="images/navi_arerow.gif" alt="">Finance</a></li>
+						<li class="xvxian"><a href="#"><img class="jiantou" src="images/navi_arerow.gif" alt="">Testimonials</a></li>
+						<li><a href="#"><img class="jiantou" src="images/navi_arerow.gif" alt="">Contact Us</a></li>
+					</ul>
+				</nav>
+	
+				 <div class="logo-right-bottom">
+					<span>Welcome to </span>
+					<p>Breaking Ontop</p>
+				 </div>
+			</div>
+		</header>
+		<section class="main">
+			<div class="main-left">
+				<span><img src="images/contact_icon.gif" alt=""> contact info</span>
+				<div class="left-ul">
+					<ul>
+						<li class="hg">FLRST NAME:</li>
+						MIDDLE<br>NAME:
+						<li class="hg">LAST NAME:</li>
+						<li class="hg">EMAIL ID:</li>
+						<li class="hg"><img src="images/comm.gif" alt="">COMMENTS:</li>
+					</ul>
+				</div>
+				<div class="left-bg">
+					<input type="text">
+					<input type="text">
+					<input type="text">
+					<input type="text">
+					 <textarea cols="23" rows=6 class="dtex"></textarea> 
+					 <img src="images/submit.gif" alt="">
+				</div>
+			</div>
+			<div class="main-center">
+				<span>archices</span>
+				<div class="mc1">
+					<p>JANUARY 2007</p>
+
+					<ul>
+						<li><img src="images/yan.png" alt="">Lorem ipsum</li>
+						<li><img src="images/yan.png" alt="">dolor sit amet,</li>
+						<li><img src="images/yan.png" alt="">consectetuer</li>
+						<li id="qb"><img src="images/yan.png" alt="">adipiscing</li>
+					</ul>
+					<p>JANUARY 2007</p>
+
+					<ul>
+						<li><img src="images/yan.png" alt="">Lorem ipsum</li>
+						<li><img src="images/yan.png" alt="">dolor sit amet,</li>
+						<li><img src="images/yan.png" alt="">consectetuer</li>
+						<li id="qb"><img src="images/yan.png" alt="">adipiscing</li>
+					</ul>
+					<p>JANUARY 2007</p>
+
+					<ul>
+						<li><img src="images/yan.png" alt="">Lorem ipsum</li>
+						<li><img src="images/yan.png" alt="">dolor sit amet,</li>
+						<li><img src="images/yan.png" alt="">consectetuer</li>
+						<li id="qb"><img src="images/yan.png" alt="">adipiscing</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-right">
+				
+				<span>Breaking Ontop is a free,</span>
+				<p>table W3C-complfant web</p>
+				<p>design layout by Teplate World.</p>
+				<p>This template had been sted and </p>
+				<p>proven compatible with all major</p>
+				<p>browser environments and</p>
+				<p>operating systems.You are free to</p>
+				<p>modify the design ot suit your</p>
+				<p>tastes in any way you like,</p>
+				<br>
+
+
+
+
+				<p>We only ask you to not remove</p>
+				"Design by Template World"and
+				the link templateworkd.com from
+				the footer of th etemplate.
+				<p><br>
+				<span>NTERDUM AUE ID SCELSQUE</span>
+				<p>
+				<span class="mt p"><img src="images/nti_arrow.gif" alt="">ultrices,lore, libero vemenatisu</span>
+				<br>
+				<span class="mt p"><img src="images/nti_arrow.gif" alt="">ligule,nec tem</span>
+				<br>
+				<div><img src="images/read_more.gif" alt=""></div>
+				
+			</div>
+		</section>
+		<footer>
+		
+				<ul>
+					<li><a class="keke" href="#">Home</a></li>
+					<li><a href="#">Natwork</a></li>
+					<li><a href="#">New Submlsslon</a></li>
+					<li><a href="#">Latest Archlces</a></li>
+					<li><a href="#">Finance</a></li>
+					<li><a href="#">Testimonlais</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			<div class="text">
+			<p>Breaking Ontop.</p>
+		 &nbsp;&nbsp;&nbsp;&nbsp; Popular fre web templates at www.Website TemplatesOnllne.com .GetJplatesFree.com- 
+		  <br>
+		  	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;free Joomla themes for websites.
+		  	<br>					
+			<p>
+		 Copyriught Statement &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Design by:Template Worid
+
+
+			</div>
+
+
+		</footer>
+	</div>
+</body>
+</html>

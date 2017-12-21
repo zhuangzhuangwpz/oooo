@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>familiy center</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: arial;
+	}
+	#container{
+		width: 1160px;
+		height: 1700px;
+		margin: 0 auto;
+		
+		
+	}
+	header{
+		width: 1160px;
+		height: 810px;	
+	}
+	.logo{
+		width: 940px;
+		height: 110px;
+		
+		margin: 0 auto;
+		overflow: hidden;
+
+	}
+	h1{
+		display: none;
+	}
+	.logo-left{
+		width: 230px;
+		height: 66px;
+		float: left;
+
+	}
+	.logo-left img{
+			margin:17px 0 0 33px;
+	}
+	.logo-right{
+		width: 192px;
+		height: 30px;
+		float: left;
+		position: relative;
+		margin:-36px 0 0 720px;
+	}
+	.logo-right input{
+		width: 188px;
+		height: 27px;
+		background-image: url(images/search-input-tail.gif);
+		border:solid 1px #d2d2d2;
+		border-radius: 6px;
+	}
+	.logo-right img{
+		position: absolute;
+		margin: -28px 0 0 160px;
+
+	}
+	.banner{
+		width: 1160px;
+		height: 703px;
+		margin: 0 auto;
+		background-image: url(images/row-bot-shadow.jpg);
+		background-size: 96.666% 71%;
+		overflow: hidden;
+		background-repeat: no-repeat;
+	}
+	nav{
+		width: 940px;
+		height: 65px;
+		
+		margin: 0 auto;
+
+
+	}
+	nav ul li{
+		list-style: none;
+		float: left;
+		width: 155.3px;
+		height: 63px;
+		/*background-image: url(images/menu-li-bg.png);*/
+		margin-right: 1.4px;
+
+		text-align: center;
+		overflow: hidden;
+		border-bottom-left-radius:5px;
+		border-bottom-right-radius:5px; 
+
+	}
+	nav ul li a{
+		text-decoration: none;
+		color: #fff;
+		font-size: 16px;
+		display: block;
+		width: 155px;
+		height: 53px;
+		line-height: 66px;
+
+	}
+	nav ul li a:hover{
+		color: #7343bb;
+		font-size: 16px;
+		background-image: url(images/menu-border-top.gif);
+		width: 155px;
+		height: 63px;
+		text-align: center;
+	}
+	.ali{
+		color: #7343bb;
+		font-size: 16px;
+		background-image: url(images/menu-border-top.gif);
+		width: 155px;
+		height: 63px;
+		text-align: center;
+	}
+	.tu{
+		width: 940px;
+		height: 440px;
+		margin: 0 auto;
+		
+		background-color:#fff;
+
+	}
+	.tu img{
+		margin:10px 10px 0 10px;
+	}
+	.xiaotu{
+		width: 940px;
+		height: 50px;
+		background-image: url(images/xiaotiao.png);
+		margin: 0 auto;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border-bottom: 1px solid #fff;
+		border-left: 1 solid #fff;
+		border-right: 1 solid #fff;
+	
+	}
+	.xiaotu img{
+		margin:14px 0 0 440px;
+	}
+	.banner .banner-bottom{
+		width: 960px;
+		height: 127px;
+		background-image: url(images/slider-bg_02.png);
+		margin: 0 auto;
+		background-repeat:no-repeat;
+		border-bottom:solid 1px #e5e5e5;
+
+	}
+	.banner .banner-bottom span i{
+		font-size: 30px;
+		color: #6e3bb9;
+		text-align: center;
+		display: block;
+		padding-top: 40px;
+	}
+	.banner .banner-bottom p i{
+		text-align: center;
+		display: block;
+	}
+	/*以上是网页开头*/
+	.main{
+		width: 960px;
+		height: 740px;
+		margin: 0 auto;
+		overflow: hidden;
+		
+	}
+	.main-top{
+		width: 960px;
+		height: 170px;
+		border-bottom:solid 1px #e5e5e5;
+	}
+	.main-top-1,.main-top-2,.main-top-3,.main-top-4{
+		width: 218px;
+		height: 128px;
+		float: left;
+		margin: 15px 9px 10px 12px;
+	}
+	.main-top span{
+			font-size: 20px;
+			color: #703eba;
+	}
+	.main-top p{
+		font-size: 12px;
+		color: #40404e;
+		line-height: 21px;
+	}
+	.lan{
+		 color: #703eba;
+
+	}
+	.main-left{
+		width: 672px;
+		height: 476px;
+		float: left;
+		border-right:solid #e5e5e5 1px;
+		margin-top: 34px;
+	}
+	.main-left-1{
+		width: 310px;
+		height: 476px;
+		float: left;
+		margin-left: 11px;
+	}
+	.main-left-2{
+		width: 310px;
+		height: 476px;
+		float: left;
+		margin-left: 10px;
+	}
+	.anniu{
+		width: 92px;
+		height: 46px;
+		border-radius: 5px;
+		background-image: url(images/anniubg.png);
+		overflow: hidden;
+		margin:0px 0 0 0px;
+		text-align: center;
+		margin-top: 30px;
+
+	}
+	.main-left-1 img{
+		margin-top: 25px;
+		margin-bottom: 10px;
+	}
+	.main-left-1 .anniu i{
+		color: #fff;
+		font-size: 26px;
+		text-align: center;
+		line-height: 44px;
+	}
+	.main-left-1 i{
+		font-size: 24px;
+		color: #404040;
+	}
+	.main-left-1 span{
+		font-size: 13px;
+		color: #000;
+		font-weight: 600;
+	}
+	.main-left-1 p{
+		font-size: 13px;
+		color:#404040;
+		line-height: 25px;
+	}
+	.main-left-2 img{
+		margin-top: 25px;
+		margin-bottom: 10px;
+	}
+	.main-left-2 .anniu i{
+		color: #fff;
+		font-size: 26px;
+		text-align: center;
+		line-height: 44px;
+	}
+	.main-left-2 i{
+		font-size: 24px;
+		color: #404040;
+	}
+	.main-left-2 span{
+		font-size: 13px;
+		color: #000;
+		font-weight: 600;
+	}
+	.main-left-2 p{
+		font-size: 13px;
+		color:#404040;
+		line-height: 25px;
+	}
+	.main-left-2 .lan{
+		color: #703eba;
+	}
+	.main-right{
+		width: 210px;
+		height: 435px;
+		float: left;
+		margin-left: 50px;
+		margin-top: 35px;
+	}
+	.main-right i{
+		font-size: 24px;
+		color: #404040;
+	}
+	.main-right u{
+		color: #703eba;
+		font-size: 12px;
+	}
+	.main-right p{
+		font-size: 12px;
+		color: #404040;
+		line-height: 20px;
+	}
+	footer{
+		width: 1160px;
+		height: 133px;
+		margin: 0 auto;
+		background-color: #f2f2f2;
+	}
+	footer p{
+		font-size: 12px;
+	}
+	footer p u{
+		font-size: 12px;
+		color: #703eda;
+	}
+	footer p{
+		padding-top: 36px;
+		margin: 0px 0 0 115px; 
+	}
+	footer .lanzi{
+		color: #703eda;
+		font-size: 35px;
+		margin:-43px 0 0 417px;
+
+		display: block;
+	}
+	footer .not{
+		font-size: 45px;
+		color: #404040;
+		margin:-47px 0 0 543px;
+		display: block;
+	}
+	footer .png{
+		width: 202px;
+		height: 40px;
+		float: left;
+		margin:-50px 0 0 827px;
+
+	}
+	
+	</style>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<div class="logo">
+				<div class="logo-left">
+				<img src="images/logo.png" alt="">
+					<h1>familiy center</h1>
+				</div>
+				<div class="logo-right">
+					<input type="text" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search">
+					<img src="images/xiaojiantou.png" alt="">
+				</div>
+			</div>
+			<div class="banner">
+				<nav>
+					<ul>
+						<li class="ali"><a href="#" class="ali">HOME PAGE</a></li>
+						<li><a href="#">HEALTH CARE</a></li>
+						<li><a href="#">ADVICES</a></li>
+						<li><a href="#">OUR STAFF</a></li>
+						<li><a href="#">NEWS</a></li>
+						<li><a href="#">CONTACTS</a></li>
+					</ul>
+				</nav>
+				<div class="tu">
+					<img src="images/slider-img1.jpg" alt="">
+				</div>
+				<div class="xiaotu">
+						<img src="images/qiuqiu.png" alt="">
+				</div>
+				<div class="banner-bottom">
+					<span><i>"Bring harmony ot your family"</i></span>
+					<p><i>You have to be persistent ot establish and maintain heaothy,two-way communication.We can help.</i></p>
+				</div>
+			</div>
+		</header>
+		<section class="main">
+			<div class="main-top">
+				<div class="main-top-1">
+					<span><i>Health & Safety</i></span>
+					<br><br>
+					<p>Lorem ipsm dolor sit amet, com</p>
+					<p>sectetur adipisicing eiit,sed do eiusmod</p>
+					<p>tmpor inciddunt ut iabore et dilore</p>
+					<p>maga ailqua.<span class="lan"><img src="images/jiantou.png" alt=""></span></p>
+				</div>
+				<div class="main-top-2">
+					<span><i>Work & CHildcare</i></span>
+					<br><br>
+					<p>Ut enim ad minim veniam,quis nostnud</p>
+					<p>exerchitation ullamco lavoris nisl ut</p>
+					<p>aliquip ex commodo com sequat.<span class="lan"><img src="images/jiantou.png" alt=""></span></p>
+				</div>
+				<div class="main-top-3">
+					<span><i>Our Ascices</i></span>
+					<br><br>
+					<p>Duis aute lrure soior in repreenderit in</p>
+					<p>voluptate velit esse cilium dolore</p>
+					<p>eu fugiat nulia pariatur excpteur</p>
+					<p>sint occaecat supodatat.<span class="lan"><img src="images/jiantou.png" alt=""></span></p>
+				</div>
+				<div class="main-top-4">
+					<span><i>Family Planning</i></span>
+					<br><br>
+					<p>Sed ut pepicoatis undse somnis uste</p>
+					<p>natus eror sit coluplatem axxus arilum</p>
+					<p>dolmque laudantim,totam rem</p>
+					<p>aperam eaque.span<span class="lan"><img src="images/jiantou.png" alt=""></span></p>
+				</div>
+
+			</div>
+			<div class="main-left">
+				<div class="main-left-1">
+					<i>Nothing is more important than your family</i>
+					<img src="images/page1-img1.jpg" alt="">
+					<br>
+					<p>
+					<span>This Famlly Center Website Template goes with two packages:</span>
+					<br>
+					With PSD source files and without them.PSD source files are avaifale for free for the registered members of Templates.com.The basic package(without PSD source)is available for anyoune <br>without registration.
+					<br>
+					</p>
+					<div class="anniu">
+						<i>More</i>
+					</div>
+				</div>
+				<div class="main-left-2">
+					<i>We understand how prcious for you your chlid is!</i>
+					<img src="images/page1-img2.jpg" alt="">
+					<br>
+					<p>
+					<span>Family Center is one of <span class="lan"><u>free website temtes</u></span>cjed by Template Monster.com team</span>
+					<br>
+					This website tempoate is potimized for 1024*768 screen resolution.it is aiso XHTML&CSS valid.This webite has several pages: <u>Home</u>,<u>Health</u>
+					<u>Care</u>,<u>Advices</u>,<u>OurStuff</u>,<u>news</u>,<u>Contacts</u> (contact us form-doesn`t work).
+					<br>
+					</p>
+					<div class="anniu">
+						<i>More</i>
+					</div>
+				</div>
+			</div>
+			<div class="main-right">
+				<i>Recent News</i>
+				<br><br>
+				<b>9.08.2011</b>
+				<br>
+				<u>Lorem ipsim dolor amet,consecteturadipiscing elit</u>
+				<br><br>
+				<p>Sed do eiusmod tempor inci sidunt laboreet diore magna aliqua.</p>
+				<br><br>
+				<b>07.08.2011</b>
+				<br>
+				<u>Ut emim minim venian,quis nostrud exrcitation uilamco</u>
+				<br><br>
+				<p>Laboris nisi u tlipuip ex ea commodoconsequat aute dolor,</p>
+				<br><br>
+				<b>02.08.2011</b>
+				<br>
+				<u>Reprehenderit in voluptate velit esse cillum dooe eu fugiat nulta</u>
+				<br><br>
+				<p>Excepteur sint occaecat cupidatat non prodent sun culpa.</p>
+
+			</div>
+		</section>
+		<footer>
+			<p>Family Center@2011 Privalicy
+			<br><br>
+			<u>Website Template</u> by TemplateMonster.com</p>
+			<span class= "lanzi">+1(800)</span><span class="not">123-1234</span>
+			<div class="png"><img src="images/social-icon.png" alt=""></div>
+		</footer>
+	</div>
+	
+</body>
+</html>
